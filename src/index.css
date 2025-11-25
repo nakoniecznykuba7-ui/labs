@@ -21,4 +21,8 @@
       opacity: 0.5;
     }
   }
+
+  #case-studies {
+    scroll-margin-top: 96px;
+  }
 }

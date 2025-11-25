@@ -46,12 +46,12 @@ export default function Modal({ isOpen, onClose, children }: ModalProps) {
       >
         <button
           onClick={onClose}
-          className="sticky top-4 float-right mr-4 mt-4 p-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors border border-white/10"
+          className="sticky top-4 float-right mr-4 mt-4 p-3 min-w-[44px] min-h-[44px] rounded-lg bg-white/5 hover:bg-white/10 transition-colors border border-white/10 flex items-center justify-center"
           aria-label="Close modal"
         >
           <X className="w-5 h-5" />
         </button>
-        <div className="p-8">
+        <div className="px-8 pb-32">
           {children}
         </div>
       </div>

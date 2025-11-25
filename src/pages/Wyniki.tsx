@@ -35,7 +35,7 @@ const caseStudies: CaseStudy[] = [
       'A/B testy checkout'
     ],
     timeframe: '21 dni',
-    result: '5200 zł przychodu, 12 zamówień',
+    result: '5 200 zł przychodu, 12 zamówień',
     verificationNote: 'Dashboard Shopify + Meta Ads Manager',
     fullActions: [
       'Zbudowanie MVP sklepu (Shopify) w 3 dni',
@@ -63,7 +63,7 @@ const caseStudies: CaseStudy[] = [
       'Pakiety usług: audyt + wdrożenie'
     ],
     timeframe: '14 dni',
-    result: '8400 zł z jednego projektu',
+    result: '8 400 zł z jednego zlecenia',
     verificationNote: 'Umowa + faktura + LinkedIn',
     fullActions: [
       'Stworzenie portfolio z 3 case studies (własne projekty)',
@@ -74,9 +74,9 @@ const caseStudies: CaseStudy[] = [
       'Pozycjonowanie: "AI automation dla e-commerce"',
       'Zbudowanie 3 demo projektów w 5 dni',
       'Cold outreach z personalizacją (response rate 11%)',
-      'Pakiet: 3500 audyt + 4900 prototyp (łącznie 8400)',
+      'Pakiet: 3 500 zł audyt + 4 900 zł prototyp (łącznie 8 400 zł)',
       'Delivery w 10 dni roboczych',
-      'Upsell: maintenance 1200/msc (nie wzięty w pierwszym projekcie)'
+      'Upsell: maintenance 1 200 zł/msc (nie wzięty w pierwszym zleceniu)'
     ]
   },
   {
@@ -100,7 +100,7 @@ const caseStudies: CaseStudy[] = [
     ],
     steps: [
       'Analiza churn: dlaczego klienci odchodzą',
-      'Pakiety: 1800/2900/4500 (starter/pro/enterprise)',
+      'Pakiety: 1 800 zł / 2 900 zł / 4 500 zł (starter/pro/enterprise)',
       'LinkedIn: 20 postów + 100 DM w miesiąc',
       '3 klientów z referrals (bonus: -10% przez 3 msc)',
       'Onboarding: proces 7 dni od wpłaty do startu',
@@ -111,15 +111,15 @@ const caseStudies: CaseStudy[] = [
     id: 'case-4',
     program: 'ecomlab',
     programLabel: 'EcomLab',
-    title: 'Dropshipping → profit w 10 dni',
-    start: 'Strata 2k w kampaniach',
+    title: 'Dropshipping → zysk w 10 dni',
+    start: 'Strata 2 000 zł w kampaniach',
     quickActions: [
       'Research-driven selection',
       'Interest stacking + lookalike',
       'Retargeting + email'
     ],
     timeframe: '10 dni',
-    result: '4100 zł, 1200 zł profit',
+    result: '4 100 zł przychodu, 1 200 zł zysku',
     verificationNote: 'Shopify + Meta Ads (ROAS 2.1)',
     fullActions: [
       'Zmiana modelu: od losowych produktów do research-driven selection',
@@ -131,7 +131,7 @@ const caseStudies: CaseStudy[] = [
       'Research: winning products z ostatnich 30 dni (narzędzia spy)',
       'Test 3 produktów po 300 zł budżetu',
       'Wygrał: gadżet lifestyle, CPA 38 zł, AOV 120 zł',
-      'Skalowanie: 1500 zł → 3000 zł/dzień',
+      'Skalowanie: 1 500 zł → 3 000 zł/dzień',
       'Email flow: abandoned cart + upsell (conversion +9%)'
     ]
   },
@@ -144,10 +144,10 @@ const caseStudies: CaseStudy[] = [
     quickActions: [
       'MVP w 7 dni (no-code + API)',
       'Product Hunt + IndieHackers',
-      'Freemium → paid (39$/msc)'
+      'Freemium → paid (39 USD/msc)'
     ],
     timeframe: '21 dni',
-    result: '12 płacących, 468$ MRR',
+    result: '12 płacących użytkowników, 468 USD MRR',
     verificationNote: 'Stripe + Product Hunt',
     fullActions: [
       'MVP w 7 dni (no-code + OpenAI API)',
@@ -175,7 +175,7 @@ const caseStudies: CaseStudy[] = [
       'Case studies na landing'
     ],
     timeframe: '14 dni',
-    result: 'Pakiet 8500 zł (280 zł/h), 2 sprzedaże',
+    result: 'Pakiet 8 500 zł (280 zł/h), 2 sprzedaże',
     verificationNote: 'Umowy + faktury + LinkedIn',
     fullActions: [
       'Pivot: od godzin do projektów pakietowych',
@@ -188,7 +188,7 @@ const caseStudies: CaseStudy[] = [
       'Positioning: "Growth dla SaaS B2B 10-50 osób"',
       'Outreach do 30 firm z targetem (10% conversion)',
       'Delivery: 2 spotkania/tydzień + raport końcowy',
-      'Upsell: retainer 3500/msc (1 z 2 klientów wziął)'
+      'Upsell: retainer 3 500 zł/msc (1 z 2 klientów wziął)'
     ]
   }
 ];
@@ -362,6 +362,9 @@ export default function Wyniki() {
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Realne projekty i liczby. Kliknij "Zobacz proces", żeby zobaczyć kroki – bez ściemy i bez lania wody.
           </p>
+          <p className="text-sm text-gray-400 mt-3 max-w-2xl mx-auto">
+            Pokazujemy konkretne przypadki. Wyniki zależą od branży, budżetu i wykonania.
+          </p>
         </div>
 
         <div className="flex flex-wrap gap-3 justify-center mb-10">
@@ -457,13 +460,12 @@ export default function Wyniki() {
               </div>
 
               <div className="mt-auto">
-                <Button
-                  variant="secondary"
-                  className="w-full"
+                <button
                   onClick={() => setSelectedCase(caseStudy)}
+                  className="w-full h-11 px-6 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-cyan-500/50 transition-all font-medium text-sm hover:shadow-[0_0_12px_rgba(6,182,212,0.15)]"
                 >
                   Zobacz proces
-                </Button>
+                </button>
               </div>
             </Card>
           ))}
@@ -497,13 +499,15 @@ export default function Wyniki() {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="flex gap-2 mb-8 border-b border-white/10">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex gap-2 mb-6 border-b border-white/10">
             <button
               onClick={() => setActiveTab('oferta')}
+              role="tab"
+              aria-selected={activeTab === 'oferta'}
               className={`px-6 py-3 font-semibold transition-all ${
                 activeTab === 'oferta'
-                  ? 'text-cyan-400 border-b-2 border-cyan-400'
+                  ? 'text-cyan-400 border-b-2 border-cyan-400 shadow-[0_2px_8px_rgba(6,182,212,0.2)]'
                   : 'text-gray-400 hover:text-gray-300'
               }`}
             >
@@ -511,9 +515,11 @@ export default function Wyniki() {
             </button>
             <button
               onClick={() => setActiveTab('dystrybucja')}
+              role="tab"
+              aria-selected={activeTab === 'dystrybucja'}
               className={`px-6 py-3 font-semibold transition-all ${
                 activeTab === 'dystrybucja'
-                  ? 'text-purple-400 border-b-2 border-purple-400'
+                  ? 'text-purple-400 border-b-2 border-purple-400 shadow-[0_2px_8px_rgba(168,85,247,0.2)]'
                   : 'text-gray-400 hover:text-gray-300'
               }`}
             >
@@ -521,9 +527,11 @@ export default function Wyniki() {
             </button>
             <button
               onClick={() => setActiveTab('system')}
+              role="tab"
+              aria-selected={activeTab === 'system'}
               className={`px-6 py-3 font-semibold transition-all ${
                 activeTab === 'system'
-                  ? 'text-blue-400 border-b-2 border-blue-400'
+                  ? 'text-blue-400 border-b-2 border-blue-400 shadow-[0_2px_8px_rgba(59,130,246,0.2)]'
                   : 'text-gray-400 hover:text-gray-300'
               }`}
             >
@@ -560,9 +568,9 @@ export default function Wyniki() {
 
             <button
               onClick={scrollToCaseStudies}
-              className="text-cyan-400 hover:text-cyan-300 transition-colors text-sm font-medium flex items-center gap-2"
+              className="text-cyan-400 hover:text-cyan-300 transition-colors text-sm font-medium inline-flex items-center gap-2"
             >
-              Zobacz jak to wygląda w praktyce w case studies ↓
+              Zobacz przykłady w case studies ↓
             </button>
           </Card>
         </div>
@@ -681,8 +689,8 @@ export default function Wyniki() {
 
       <Modal isOpen={selectedCase !== null} onClose={() => setSelectedCase(null)}>
         {selectedCase && (
-          <div>
-            <div className="mb-6">
+          <div className="relative">
+            <div className="mb-6 pt-4">
               <Badge variant={getProgramBadgeVariant(selectedCase.program)} className="mb-3">
                 {selectedCase.programLabel}
               </Badge>
@@ -690,12 +698,12 @@ export default function Wyniki() {
             </div>
 
             <div className="space-y-6">
-              <div>
+              <div className="pb-6 border-b border-white/10">
                 <h3 className="text-lg font-semibold text-cyan-400 mb-2">Start</h3>
                 <p className="text-gray-300">{selectedCase.start}</p>
               </div>
 
-              <div>
+              <div className="pb-6 border-b border-white/10">
                 <h3 className="text-lg font-semibold text-cyan-400 mb-2">Działania</h3>
                 <ul className="space-y-2">
                   {selectedCase.fullActions.map((action, idx) => (
@@ -707,7 +715,7 @@ export default function Wyniki() {
                 </ul>
               </div>
 
-              <div>
+              <div className="pb-6 border-b border-white/10">
                 <h3 className="text-lg font-semibold text-cyan-400 mb-3">Krok po kroku</h3>
                 <ol className="space-y-3">
                   {selectedCase.steps.map((step, idx) => (
@@ -721,31 +729,33 @@ export default function Wyniki() {
                 </ol>
               </div>
 
-              <div className="pt-4 border-t border-white/10">
-                <h3 className="text-lg font-semibold text-cyan-400 mb-2">Efekt w / Wynik</h3>
-                <p className="text-gray-300 mb-1">
-                  <span className="font-semibold">Timeframe:</span> {selectedCase.timeframe}
-                </p>
-                <p className="text-white font-semibold mb-3">{selectedCase.result}</p>
+              <div className="pb-6 border-b border-white/10">
+                <h3 className="text-lg font-semibold text-cyan-400 mb-3">Efekt w / Wynik</h3>
+                <div className="bg-white/5 rounded-xl p-4 border border-white/10">
+                  <p className="text-gray-300 mb-2">
+                    <span className="font-semibold">Timeframe:</span> {selectedCase.timeframe}
+                  </p>
+                  <p className="text-white font-semibold text-lg mb-4">{selectedCase.result}</p>
 
-                <div className="text-sm">
-                  <span className="text-gray-400 font-semibold">Dowód / weryfikacja:</span>
-                  <p className="text-gray-400 italic">{selectedCase.verificationNote}</p>
+                  <div className="text-sm pt-3 border-t border-white/10">
+                    <span className="text-gray-400 font-semibold">Dowód / weryfikacja:</span>
+                    <p className="text-gray-400">{selectedCase.verificationNote}</p>
+                  </div>
                 </div>
               </div>
+            </div>
 
-              <div className="pt-6 border-t border-white/10 flex flex-col sm:flex-row gap-4">
-                <Link to="/programy" className="flex-1">
-                  <Button variant="primary" className="w-full">
-                    Wybierz program dla siebie
-                  </Button>
-                </Link>
-                <Link to="/konsultacja" className="flex-1">
-                  <Button variant="secondary" className="w-full">
-                    Umów konsultację
-                  </Button>
-                </Link>
-              </div>
+            <div className="fixed bottom-0 left-0 right-0 p-6 bg-gray-900/98 backdrop-blur-xl border-t border-white/10 flex flex-col sm:flex-row gap-3">
+              <Link to="/programy" className="flex-1">
+                <Button variant="primary" className="w-full h-12">
+                  Wybierz program dla siebie
+                </Button>
+              </Link>
+              <Link to="/konsultacja" className="flex-1">
+                <Button variant="secondary" className="w-full h-12">
+                  Umów konsultację
+                </Button>
+              </Link>
             </div>
           </div>
         )}
