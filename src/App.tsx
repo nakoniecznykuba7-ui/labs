@@ -7,6 +7,7 @@ import Programy from './pages/Programy';
 import Kontakt from './pages/Kontakt';
 import Zakup from './pages/Zakup';
 import Konsultacja from './pages/Konsultacja';
+import Wyniki from './pages/Wyniki';
 
 function App() {
   const location = useLocation();
@@ -30,6 +31,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/programy" element={<Programy />} />
+        <Route path="/wyniki" element={<Wyniki />} />
         <Route path="/kontakt" element={<Kontakt />} />
         <Route path="/zakup" element={<Zakup />} />
         <Route path="/konsultacja" element={<Konsultacja />} />

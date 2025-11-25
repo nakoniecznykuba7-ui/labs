@@ -54,12 +54,12 @@ export default function Navigation() {
             >
               Programy
             </Link>
-            <button
-              onClick={() => handleNavigation('/', 'wyniki')}
+            <Link
+              to="/wyniki"
               className="text-gray-300 hover:text-white transition-colors"
             >
               Wyniki
-            </button>
+            </Link>
             <Link
               to="/kontakt"
               className="text-gray-300 hover:text-white transition-colors"
@@ -102,12 +102,13 @@ export default function Navigation() {
               >
                 Programy
               </Link>
-              <button
-                onClick={() => handleNavigation('/', 'wyniki')}
+              <Link
+                to="/wyniki"
+                onClick={() => setIsMenuOpen(false)}
                 className="text-gray-300 hover:text-white transition-colors text-left py-2"
               >
                 Wyniki
-              </button>
+              </Link>
               <Link
                 to="/kontakt"
                 onClick={() => setIsMenuOpen(false)}
