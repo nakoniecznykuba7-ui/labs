@@ -195,7 +195,7 @@ Skąd się dowiedział: ${formData.source || 'Nie podano'}
             </h1>
 
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-              W 15–20 minut sprawdzimy, czy któryś z programów EarningLab ma sens dla Twojej
+              W 15 minut sprawdzimy, czy któryś z programów EarningLab ma sens dla Twojej
               sytuacji. Bez wciskania, bez zobowiązań – jeśli nie widzimy szans, mówimy to wprost.
             </p>
 
@@ -257,7 +257,7 @@ Skąd się dowiedział: ${formData.source || 'Nie podano'}
             <h3 className="text-2xl font-bold mb-2">Diagnoza</h3>
 
             <p className="text-gray-200">
-              10–15 minut rozmowy o Twoim celu, czasie, budżecie i dotychczasowych próbach. Zadajemy
+              Analiza wprowadzonych przez ciebie odpowiedzi. Zadajemy
               konkretne pytania, bez small talku.
             </p>
           </Card>
