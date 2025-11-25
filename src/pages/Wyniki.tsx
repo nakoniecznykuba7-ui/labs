@@ -470,25 +470,6 @@ export default function Wyniki() {
             </Card>
           ))}
         </div>
-
-        <Card variant="default" className="max-w-4xl mx-auto text-center">
-          <h3 className="text-2xl font-bold mb-3">Chcesz podobny plan pod siebie?</h3>
-          <p className="text-gray-300 mb-6">
-            Dobierzemy ścieżkę i dostaniesz kroki + feedback 1:1. Jeśli nie ma to sensu — powiemy wprost.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/programy">
-              <Button variant="primary" size="lg">
-                Zobacz programy
-              </Button>
-            </Link>
-            <Link to="/konsultacja">
-              <Button variant="secondary" size="lg">
-                Umów konsultację
-              </Button>
-            </Link>
-          </div>
-        </Card>
       </Section>
 
       <Section hasBorder>
