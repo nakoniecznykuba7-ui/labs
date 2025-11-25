@@ -34,7 +34,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <img src={earninglabLogo} alt="EarningLab" className="h-7 w-auto" />
+            <img src={earninglabLogo} alt="EarningLab" className="h-9 w-auto" />
             <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
               EarningLab
             </span>
