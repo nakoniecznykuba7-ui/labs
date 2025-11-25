@@ -40,7 +40,7 @@ export default function Hero() {
 
             <div className="space-y-2.5 pt-3">
               <CheckListItem>
-                Dobieramy model zarabiania pod Ciebie - zamiast wciskać gotowe schematy
+                Dobieramy model zarabiania pod Ciebie – zamiast wciskać gotowe schematy
               </CheckListItem>
               <CheckListItem>
                 Prowadzimy Cię od zera do pierwszych klientów lub zamówień
@@ -49,7 +49,7 @@ export default function Hero() {
                 Dostajesz feedback 1:1, żeby nie błądzić jak w kursach
               </CheckListItem>
               <CheckListItem>
-                Zero ściemy — szybka droga do pierwszych wyników
+                Zero ściemy – szybka droga do pierwszych wyników
               </CheckListItem>
             </div>
           </div>
