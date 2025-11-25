@@ -1,9 +1,11 @@
 import { useState, FormEvent } from 'react';
 import { Mail, Send, CheckCircle, AlertCircle } from 'lucide-react';
+import { usePageTitle } from '../hooks/usePageTitle';
 import Section from '../components/ui/Section';
 import Button from '../components/ui/Button';
 
 export default function Kontakt() {
+  usePageTitle('Kontakt | EarningLab');
   const [formData, setFormData] = useState({
     name: '',
     email: '',

@@ -1,16 +1,15 @@
 import { useNavigate } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 import { CheckCircle, Mail, ArrowLeft } from 'lucide-react';
+import { usePageTitle } from '../hooks/usePageTitle';
 import Button from '../components/ui/Button';
 
 export default function Zakup() {
+  usePageTitle('Dziękujemy za zakup | EarningLab');
+
   const navigate = useNavigate();
 
   return (
     <>
-      <Helmet>
-        <meta name="robots" content="noindex,nofollow" />
-      </Helmet>
 
       <section className="pt-28 md:pt-36 pb-16 md:pb-20 px-6">
         <div className="max-w-3xl mx-auto">

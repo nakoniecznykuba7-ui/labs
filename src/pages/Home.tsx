@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import { usePageTitle } from '../hooks/usePageTitle';
 import Hero from '../components/Hero';
 import HowItWorks from '../components/HowItWorks';
 import PathCards from '../components/PathCards';
@@ -7,11 +7,10 @@ import SocialProof from '../components/SocialProof';
 import FAQ from '../components/FAQ';
 
 export default function Home() {
+  usePageTitle('EarningLab – Laboratorium zarabiania online');
+
   return (
     <>
-      <Helmet>
-        <title>Zacznij Zarabiać Online</title>
-      </Helmet>
       <Hero />
       <HowItWorks />
       <PathCards />

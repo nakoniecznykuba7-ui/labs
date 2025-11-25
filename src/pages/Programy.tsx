@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom';
 import { ShoppingCart, Sparkles, Briefcase, Check, Clock, Coins, AlertCircle, Target } from 'lucide-react';
+import { usePageTitle } from '../hooks/usePageTitle';
 import Badge from '../components/ui/Badge';
 import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
 import Section from '../components/ui/Section';
 
 export default function Programy() {
+  usePageTitle('Programy | EarningLab');
   return (
     <>
       <section className="pt-20 md:pt-24 pb-12 md:pb-16 px-6">

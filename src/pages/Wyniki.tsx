@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { TrendingUp, Target, Zap, ChevronDown, ChevronUp, CheckCircle2 } from 'lucide-react';
+import { usePageTitle } from '../hooks/usePageTitle';
 import Badge from '../components/ui/Badge';
 import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
@@ -193,6 +194,8 @@ const faqItems = [
 ];
 
 export default function Wyniki() {
+  usePageTitle('Wyniki klientów | EarningLab');
+
   const [expandedCase, setExpandedCase] = useState<string | null>(null);
   const [expandedFaq, setExpandedFaq] = useState<string | null>(null);
 

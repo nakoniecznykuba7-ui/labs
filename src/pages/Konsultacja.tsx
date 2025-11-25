@@ -1,11 +1,13 @@
 import { useState, FormEvent } from 'react';
 import { Target, CheckCircle, AlertCircle, Send, ThumbsUp, ThumbsDown } from 'lucide-react';
+import { usePageTitle } from '../hooks/usePageTitle';
 import Badge from '../components/ui/Badge';
 import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
 import Section from '../components/ui/Section';
 
 export default function Konsultacja() {
+  usePageTitle('Umów konsultację | EarningLab');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
