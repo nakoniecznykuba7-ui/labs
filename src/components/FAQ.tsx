@@ -67,15 +67,15 @@ export default function FAQ() {
   ];
 
   return (
-    <section className="py-12 px-6 border-t border-white/5">
+    <section className="py-10 md:py-12 px-6 border-t border-white/5">
       <div className="max-w-3xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4">
+        <div className="text-center mb-10">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-3">
             FAQ – najczęstsze pytania
           </h2>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-3">
           {faqs.map((faq, index) => (
             <FAQItem
               key={index}

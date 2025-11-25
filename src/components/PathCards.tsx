@@ -2,10 +2,10 @@ import { ShoppingCart, Sparkles, Briefcase } from 'lucide-react';
 
 export default function PathCards() {
   return (
-    <section id="paths" className="py-12 px-6 border-t border-white/5">
+    <section id="paths" className="py-10 md:py-12 px-6 border-t border-white/5">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4">
+        <div className="text-center mb-10">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-3">
             Wybierz ścieżkę, która pasuje do Ciebie
           </h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
@@ -14,21 +14,21 @@ export default function PathCards() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8">
-          <div className="bg-gradient-to-br from-cyan-500/5 to-blue-500/5 backdrop-blur-xl rounded-2xl border border-cyan-500/20 p-8 hover:border-cyan-500/40 transition-all group">
-            <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+        <div className="grid lg:grid-cols-3 gap-6">
+          <div className="bg-gradient-to-br from-cyan-500/5 to-blue-500/5 backdrop-blur-xl rounded-2xl border border-cyan-500/20 p-6 hover:border-cyan-500/40 transition-all group">
+            <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <ShoppingCart className="w-8 h-8 text-white" />
             </div>
 
-            <h3 className="text-2xl font-bold mb-3">EcomLab</h3>
+            <h3 className="text-2xl font-bold mb-2">EcomLab</h3>
             <p className="text-cyan-400 text-sm font-semibold mb-4">E-commerce & Dropshipping</p>
 
-            <p className="text-gray-300 mb-6 leading-relaxed">
+            <p className="text-gray-300 mb-4 leading-relaxed">
               Dla osób, które chcą budować sklepy internetowe lub sprzedawać produkty online.
               Nie musisz mieć swoich produktów – możesz zacząć od dropshippingu lub produktów cyfrowych.
             </p>
 
-            <ul className="space-y-3 mb-6">
+            <ul className="space-y-2 mb-4">
               <li className="flex items-start gap-3">
                 <div className="w-1.5 h-1.5 rounded-full bg-cyan-400 mt-2 flex-shrink-0"></div>
                 <span className="text-gray-300">Pomagamy dobrać produkty i model sklepu</span>
@@ -43,7 +43,7 @@ export default function PathCards() {
               </li>
             </ul>
 
-            <div className="bg-cyan-500/10 border border-cyan-500/20 rounded-lg p-3 mb-6">
+            <div className="bg-cyan-500/10 border border-cyan-500/20 rounded-lg p-3 mb-4">
               <p className="text-xs text-gray-400 leading-relaxed">
                 Najlepsze, jeśli lubisz cyfrowe produkty albo fizyczne rzeczy i masz minimalny budżet na testy.
               </p>
@@ -59,15 +59,15 @@ export default function PathCards() {
               <Sparkles className="w-8 h-8 text-white" />
             </div>
 
-            <h3 className="text-2xl font-bold mb-3">AI Skill Lab</h3>
+            <h3 className="text-2xl font-bold mb-2">AI Skill Lab</h3>
             <p className="text-purple-400 text-sm font-semibold mb-4">Umiejętności + AI</p>
 
-            <p className="text-gray-300 mb-6 leading-relaxed">
+            <p className="text-gray-300 mb-4 leading-relaxed">
               Dla osób, które chcą sprzedawać swoje umiejętności (grafika, teksty, montaż, social media)
               szybciej i lepiej dzięki narzędziom AI.
             </p>
 
-            <ul className="space-y-3 mb-6">
+            <ul className="space-y-2 mb-4">
               <li className="flex items-start gap-3">
                 <div className="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2 flex-shrink-0"></div>
                 <span className="text-gray-300">Pomagamy wybrać skill, który realnie ktoś kupi</span>
@@ -98,15 +98,15 @@ export default function PathCards() {
               <Briefcase className="w-8 h-8 text-white" />
             </div>
 
-            <h3 className="text-2xl font-bold mb-3">Service Growth Lab</h3>
+            <h3 className="text-2xl font-bold mb-2">Service Growth Lab</h3>
             <p className="text-blue-400 text-sm font-semibold mb-4">Freelance & Skalowanie usług</p>
 
-            <p className="text-gray-300 mb-6 leading-relaxed">
+            <p className="text-gray-300 mb-4 leading-relaxed">
               Dla freelancerów lub właścicieli mikro-agencji, którzy chcą więcej klientów, lepsze stawki
               i przestać tonąć w chaosie.
             </p>
 
-            <ul className="space-y-3 mb-6">
+            <ul className="space-y-2 mb-4">
               <li className="flex items-start gap-3">
                 <div className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2 flex-shrink-0"></div>
                 <span className="text-gray-300">Pomoc w ustawieniu oferty, cennika i pakietów</span>

@@ -2,17 +2,17 @@ import { TrendingUp } from 'lucide-react';
 
 export default function SocialProof() {
   return (
-    <section id="wyniki" className="py-12 px-6 border-t border-white/5">
+    <section id="wyniki" className="py-10 md:py-12 px-6 border-t border-white/5">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4">
+        <div className="text-center mb-10">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-3">
             Przykłady efektów i historii
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 mb-12">
-          <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 p-8 hover:border-cyan-500/30 transition-all">
-            <div className="flex items-center gap-3 mb-6">
+        <div className="grid lg:grid-cols-3 gap-6 mb-8">
+          <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 p-6 hover:border-cyan-500/30 transition-all">
+            <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-xl font-bold">
                 K.M.
               </div>
@@ -22,7 +22,7 @@ export default function SocialProof() {
               </div>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-3">
               <div>
                 <div className="text-xs text-cyan-400 font-semibold mb-1">PRZED</div>
                 <p className="text-sm text-gray-300">
@@ -57,7 +57,7 @@ export default function SocialProof() {
           </div>
 
           <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 p-8 hover:border-purple-500/30 transition-all">
-            <div className="flex items-center gap-3 mb-6">
+            <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center text-xl font-bold">
                 A.N.
               </div>
@@ -67,7 +67,7 @@ export default function SocialProof() {
               </div>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-3">
               <div>
                 <div className="text-xs text-purple-400 font-semibold mb-1">PRZED</div>
                 <p className="text-sm text-gray-300">
@@ -102,7 +102,7 @@ export default function SocialProof() {
           </div>
 
           <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 p-8 hover:border-blue-500/30 transition-all">
-            <div className="flex items-center gap-3 mb-6">
+            <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-xl font-bold">
                 M.W.
               </div>
@@ -112,7 +112,7 @@ export default function SocialProof() {
               </div>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-3">
               <div>
                 <div className="text-xs text-blue-400 font-semibold mb-1">PRZED</div>
                 <p className="text-sm text-gray-300">

@@ -6,10 +6,10 @@ import DashboardMockup from './DashboardMockup';
 
 export default function Hero() {
   return (
-    <section className="pt-24 md:pt-32 pb-20 md:pb-28 px-6">
+    <section className="pt-20 md:pt-24 pb-12 md:pb-16 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-3">
+        <div className="grid lg:grid-cols-2 gap-10 items-center">
+          <div className="space-y-2.5">
             <Badge showPulse>
               Laboratorium zarabiania online dla ludzi, którzy nie chcą kolejnego kursu, tylko wyniki
             </Badge>
@@ -38,7 +38,7 @@ export default function Hero() {
               </Button>
             </div>
 
-            <div className="space-y-3.5 pt-4">
+            <div className="space-y-2.5 pt-3">
               <CheckListItem>
                 Dobieramy model zarabiania pod Ciebie — zamiast wciskać gotowe schematy
               </CheckListItem>

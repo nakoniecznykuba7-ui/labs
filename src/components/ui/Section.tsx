@@ -11,7 +11,7 @@ export default function Section({ children, id, className = '', hasBorder = fals
   return (
     <section
       id={id}
-      className={`py-16 md:py-20 px-6 ${hasBorder ? 'border-t border-white/5' : ''} ${className}`}
+      className={`py-10 md:py-14 px-6 ${hasBorder ? 'border-t border-white/5' : ''} ${className}`}
     >
       <div className="max-w-6xl mx-auto">{children}</div>
     </section>

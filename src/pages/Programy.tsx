@@ -7,9 +7,9 @@ import Section from '../components/ui/Section';
 export default function Programy() {
   return (
     <>
-      <section className="pt-24 md:pt-32 pb-20 md:pb-28 px-6">
+      <section className="pt-20 md:pt-24 pb-12 md:pb-16 px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center space-y-6">
+          <div className="text-center space-y-4">
             <Badge variant="cyan" showPulse>
               Programy EarningLab
             </Badge>
@@ -47,8 +47,8 @@ export default function Programy() {
       </section>
 
       <Section id="programy-list" hasBorder>
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4">Nasze programy</h2>
+        <div className="text-center mb-10">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-3">Nasze programy</h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Każdy program prowadzi do konkretnego wyniku. Wybierz ten, który pasuje do Twojej sytuacji.
           </p>
@@ -66,7 +66,7 @@ export default function Programy() {
             <h3 className="text-2xl font-bold mb-2">EcomLab</h3>
             <p className="text-cyan-400 text-sm font-semibold mb-6">E-commerce & Dropshipping</p>
 
-            <ul className="space-y-3 mb-8">
+            <ul className="space-y-2 mb-6">
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
                 <span className="text-gray-200">Produkt + oferta w 48h</span>
@@ -101,7 +101,7 @@ export default function Programy() {
             <h3 className="text-2xl font-bold mb-2">AI Skill Lab</h3>
             <p className="text-purple-400 text-sm font-semibold mb-6">Umiejętności + AI</p>
 
-            <ul className="space-y-3 mb-8">
+            <ul className="space-y-2 mb-6">
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
                 <span className="text-gray-200">Skill, który płaci szybko</span>
@@ -132,7 +132,7 @@ export default function Programy() {
             <h3 className="text-2xl font-bold mb-2">Service Growth Lab</h3>
             <p className="text-blue-400 text-sm font-semibold mb-6">Freelance & Skalowanie</p>
 
-            <ul className="space-y-3 mb-8">
+            <ul className="space-y-2 mb-6">
               <li className="flex items-start gap-3">
                 <Check className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
                 <span className="text-gray-200">Oferta, cennik, pakiety</span>
@@ -155,8 +155,8 @@ export default function Programy() {
       </Section>
 
       <Section id="porownie" hasBorder>
-        <div className="text-center mb-12">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4">Które rozwiązanie jest dla Ciebie?</h2>
+        <div className="text-center mb-8">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-3">Które rozwiązanie jest dla Ciebie?</h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Szybkie porównanie, żeby łatwiej podjąć decyzję.
           </p>
@@ -311,14 +311,14 @@ export default function Programy() {
 
       <Section id="diagnoza" hasBorder className="bg-gradient-to-br from-cyan-500/5 to-blue-500/5">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4">
             Nie wiesz co wybrać?
           </h2>
-          <p className="text-lg text-gray-300 mb-12">
+          <p className="text-lg text-gray-300 mb-8">
             Pomożemy Ci podjąć decyzję. W 10-minutowej diagnozie określimy, która ścieżka ma największy sens dla Twojej sytuacji.
           </p>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
             <Card variant="default">
               <div className="text-center">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center mx-auto mb-4">
@@ -373,7 +373,7 @@ export default function Programy() {
             </Button>
           </div>
 
-          <p className="text-sm text-gray-400 mt-8 italic">
+          <p className="text-sm text-gray-400 mt-6 italic">
             Jeśli żadna ścieżka nie ma sensu — też Ci to powiemy.
           </p>
         </div>

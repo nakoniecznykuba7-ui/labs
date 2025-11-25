@@ -25,10 +25,10 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="kontakt" className="py-12 px-6 border-t border-white/5">
+    <section id="kontakt" className="py-10 md:py-12 px-6 border-t border-white/5">
       <div className="max-w-2xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4">
+        <div className="text-center mb-8">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-3">
             Zobacz, czy EarningLab ma sens dla Ciebie
           </h2>
           <p className="text-lg text-gray-300 max-w-xl mx-auto">
@@ -37,7 +37,7 @@ export default function ContactForm() {
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form onSubmit={handleSubmit} className="space-y-4">
           <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 p-8">
             <div className="mb-6">
               <label htmlFor="name" className="block text-sm font-medium mb-2">
