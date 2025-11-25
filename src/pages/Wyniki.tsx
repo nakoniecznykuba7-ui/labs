@@ -238,7 +238,7 @@ export default function Wyniki() {
             </h1>
 
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-              Case studies + konkretne metryki. Bez magii, bez teorii — proces, decyzje i efekty.
+              Case studies + konkretne metryki. Bez magii, bez teorii – proces, decyzje i efekty.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
