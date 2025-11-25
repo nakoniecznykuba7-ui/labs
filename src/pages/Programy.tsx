@@ -363,7 +363,7 @@ export default function Programy() {
           </div>
 
           <p className="text-sm text-gray-400 mt-6 italic">
-            Jeśli żadna ścieżka nie ma sensu — też Ci to powiemy.
+            Jeśli żadna ścieżka nie ma sensu – też Ci to powiemy.
           </p>
         </div>
       </Section>
