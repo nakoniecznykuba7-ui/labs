@@ -449,7 +449,7 @@ export default function Programy() {
             Nie wiesz co wybrać?
           </h2>
           <p className="text-lg text-gray-300 mb-8">
-            Pomożemy Ci podjąć decyzję. W 10-minutowej diagnozie określimy, która ścieżka ma największy sens dla Twojej sytuacji.
+            Pomożemy Ci podjąć decyzję. W 15-minutowej diagnozie określimy, która ścieżka ma największy sens dla Twojej sytuacji.
           </p>
 
           <div className="grid md:grid-cols-3 gap-6 mb-8">
