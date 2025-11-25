@@ -71,12 +71,11 @@ export default function Kontakt() {
     try {
       const formPayload = new FormData();
       formPayload.append('access_key', '86cbb94c-68e4-45a1-9b3f-0fff3d973d5f');
-      formPayload.append('from_name', 'EarningLab Kontakt');
-      formPayload.append('subject', 'Nowa wiadomość z formularza kontaktowego EarningLab');
       formPayload.append('name', formData.name);
       formPayload.append('email', formData.email);
-      formPayload.append('user_subject', formData.subject);
-      formPayload.append('message', formData.message);
+      formPayload.append('message', `Temat: ${formData.subject}\n\n${formData.message}`);
+      formPayload.append('from_name', 'EarningLab Website');
+      formPayload.append('subject', 'Nowa wiadomość z formularza kontaktowego EarningLab');
 
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
