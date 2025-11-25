@@ -44,15 +44,71 @@ export default function Programy() {
       </section>
 
       <Section id="programy-list" hasBorder>
-        <div className="text-center mb-10">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-3">Nasze programy</h2>
+        <div className="text-center mb-12">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-3">W każdym programie dostajesz</h2>
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-8">
+            Bazowy pakiet wartości – bez względu na to, którą ścieżkę wybierzesz.
+          </p>
+
+          <div className="max-w-4xl mx-auto">
+            <Card variant="default" className="text-left">
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <div>
+                    <span className="text-gray-200 font-semibold">Start w 15 minut:</span>
+                    <span className="text-gray-400 text-sm block">onboarding + ustawienie pierwszych kroków</span>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <div>
+                    <span className="text-gray-200 font-semibold">Plan działania krok po kroku</span>
+                    <span className="text-gray-400 text-sm block">(bez teorii – same zadania)</span>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <div>
+                    <span className="text-gray-200 font-semibold">Checklisty + gotowe szablony</span>
+                    <span className="text-gray-400 text-sm block">(żeby nie wymyślać od zera)</span>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <div>
+                    <span className="text-gray-200 font-semibold">Feedback do Twoich działań</span>
+                    <span className="text-gray-400 text-sm block">(nie "motywacja", tylko korekty)</span>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <div>
+                    <span className="text-gray-200 font-semibold">Prosty system dowozu</span>
+                    <span className="text-gray-400 text-sm block">(wiesz co robić dziś / jutro)</span>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Check className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <div>
+                    <span className="text-gray-200 font-semibold">Jasny cel:</span>
+                    <span className="text-gray-400 text-sm block">pierwsze efekty jak najszybciej, bez chaosu</span>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </div>
+        </div>
+
+        <div className="text-center mb-10 mt-16">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-3">Wybierz program</h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Każdy program prowadzi do konkretnego wyniku. Wybierz ten, który pasuje do Twojej sytuacji.
+            Każdy program prowadzi do konkretnego wyniku. 169 zł jednorazowo, bez subskrypcji.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
-          <Card variant="cyan" className="group">
+          <Card variant="cyan" className="group flex flex-col">
             <div className="flex items-start justify-between mb-4">
               <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center group-hover:scale-110 transition-transform">
                 <ShoppingCart className="w-8 h-8 text-white" strokeWidth={2} />
@@ -61,33 +117,63 @@ export default function Programy() {
             </div>
 
             <h3 className="text-2xl font-bold mb-2">EcomLab</h3>
-            <p className="text-cyan-400 text-sm font-semibold mb-6">E-commerce & Dropshipping</p>
+            <p className="text-cyan-400 text-sm font-semibold mb-4">E-commerce & Dropshipping</p>
 
-            <ul className="space-y-2 mb-6">
-              <li className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                <span className="text-gray-200">Produkt + oferta w 48h</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                <span className="text-gray-200">Ruch → pierwsze zamówienia</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                <span className="text-gray-200">Prosty system dowozu</span>
-              </li>
-            </ul>
+            <div className="mb-6 pb-6 border-b border-white/10">
+              <div className="text-4xl font-bold mb-1">169 zł</div>
+              <div className="text-sm text-gray-400">jednorazowo, bez subskrypcji</div>
+              <div className="text-xs text-gray-500 mt-2 italic">Dla osób, które chcą pierwszych zamówień, a nie perfekcyjnego sklepu.</div>
+            </div>
 
-            <Button
-              variant="primary"
-              className="w-full"
-              onClick={() => document.getElementById('ecomlab')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              Przejdź do EcomLab
-            </Button>
+            <div className="mb-6 flex-grow">
+              <div className="text-sm font-semibold text-cyan-400 mb-3">Co dostajesz w środku:</div>
+              <ul className="space-y-2 text-sm">
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <span className="text-gray-300">Wybór kierunku: produkt / nisza / model (prosty filtr decyzyjny)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <span className="text-gray-300">Szkielet oferty, która się broni (co, dla kogo, dlaczego kupią)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <span className="text-gray-300">Gotowy plan startu sklepu (minimum bez dłubania tygodniami)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <span className="text-gray-300">Checklista: produkt + marża + dostawca + ryzyko</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <span className="text-gray-300">Prosty lejek: ruch → oferta → pierwsze zamówienie</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <span className="text-gray-300">48h sprint: "co robić, żeby ruszyć, a nie planować"</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <span className="text-gray-300">Minimalny system obsługi zamówień (żeby nie utknąć w operacji)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <span className="text-gray-300">Najczęstsze błędy + jak ich uniknąć (żeby nie palić budżetu)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="mt-auto">
+              <a href="https://buy.stripe.com/28o8zj4qV7TGaFG4gg" target="_blank" rel="noopener noreferrer" className="block">
+                <Button variant="primary" className="w-full">
+                  Przejdź do EcomLab
+                </Button>
+              </a>
+              <p className="text-xs text-gray-500 text-center mt-2">Płatność bezpieczna (Stripe) → instrukcje na mailu</p>
+            </div>
           </Card>
 
-          <Card variant="purple" className="group">
+          <Card variant="purple" className="group flex flex-col">
             <div className="flex items-start justify-between mb-4">
               <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center group-hover:scale-110 transition-transform">
                 <Sparkles className="w-8 h-8 text-white" strokeWidth={2} />
@@ -96,29 +182,63 @@ export default function Programy() {
             </div>
 
             <h3 className="text-2xl font-bold mb-2">AI Skill Lab</h3>
-            <p className="text-purple-400 text-sm font-semibold mb-6">Umiejętności + AI</p>
+            <p className="text-purple-400 text-sm font-semibold mb-4">Umiejętności + AI</p>
 
-            <ul className="space-y-2 mb-6">
-              <li className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                <span className="text-gray-200">Skill, który płaci szybko</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                <span className="text-gray-200">Portfolio + oferta</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                <span className="text-gray-200">AI workflow od razu</span>
-              </li>
-            </ul>
+            <div className="mb-6 pb-6 border-b border-white/10">
+              <div className="text-4xl font-bold mb-1">169 zł</div>
+              <div className="text-sm text-gray-400">jednorazowo, bez subskrypcji</div>
+              <div className="text-xs text-gray-500 mt-2 italic">Dla osób, które chcą sprzedawać skill, a AI ma być dźwignią – nie zabawką.</div>
+            </div>
 
-            <button className="w-full px-6 py-3 rounded-xl bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-400 hover:to-pink-500 transition-all font-semibold shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40">
-              Przejdź do AI Skill Lab
-            </button>
+            <div className="mb-6 flex-grow">
+              <div className="text-sm font-semibold text-purple-400 mb-3">Co dostajesz w środku:</div>
+              <ul className="space-y-2 text-sm">
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <span className="text-gray-300">Wybór skillu, który realnie kupują ludzie (bez zgadywania)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <span className="text-gray-300">"Oferta w 1 dzień" – prosta usługa + opis + zakres</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <span className="text-gray-300">Portfolio starter: 2–3 przykładowe realizacje (nawet jeśli startujesz od zera)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <span className="text-gray-300">Workflow z AI: jak robić szybciej (prompty + proces, nie hype)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <span className="text-gray-300">Checklista: jak wycenić i nie oddać się za grosze</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <span className="text-gray-300">Jak pisać wiadomości/DM, które dostają odpowiedź (bez spiny)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <span className="text-gray-300">System dowozu: jak oddawać pracę i brać polecenia</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <span className="text-gray-300">Plan na pierwszych klientów (prosto, bez "marki osobistej")</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="mt-auto">
+              <a href="https://buy.stripe.com/5kA5n76z3g0mbJK145" target="_blank" rel="noopener noreferrer" className="block">
+                <button className="w-full px-6 py-3 rounded-xl bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-400 hover:to-pink-500 transition-all font-semibold shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40">
+                  Przejdź do AI Skill Lab
+                </button>
+              </a>
+              <p className="text-xs text-gray-500 text-center mt-2">Płatność bezpieczna (Stripe) → instrukcje na mailu</p>
+            </div>
           </Card>
 
-          <Card variant="blue" className="group">
+          <Card variant="blue" className="group flex flex-col">
             <div className="flex items-start justify-between mb-4">
               <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center group-hover:scale-110 transition-transform">
                 <Briefcase className="w-8 h-8 text-white" strokeWidth={2} />
@@ -127,27 +247,69 @@ export default function Programy() {
             </div>
 
             <h3 className="text-2xl font-bold mb-2">Service Growth Lab</h3>
-            <p className="text-blue-400 text-sm font-semibold mb-6">Freelance & Skalowanie</p>
+            <p className="text-blue-400 text-sm font-semibold mb-4">Freelance & Skalowanie</p>
 
-            <ul className="space-y-2 mb-6">
-              <li className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                <span className="text-gray-200">Oferta, cennik, pakiety</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                <span className="text-gray-200">Pozyskiwanie bez spiny</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Check className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                <span className="text-gray-200">Proces obsługi klienta</span>
-              </li>
-            </ul>
+            <div className="mb-6 pb-6 border-b border-white/10">
+              <div className="text-4xl font-bold mb-1">169 zł</div>
+              <div className="text-sm text-gray-400">jednorazowo, bez subskrypcji</div>
+              <div className="text-xs text-gray-500 mt-2 italic">Dla osób, które już coś robią i chcą to w końcu ogarnąć jak system.</div>
+            </div>
 
-            <button className="w-full px-6 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-400 hover:to-indigo-500 transition-all font-semibold shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40">
-              Przejdź do Service Growth Lab
-            </button>
+            <div className="mb-6 flex-grow">
+              <div className="text-sm font-semibold text-blue-400 mb-3">Co dostajesz w środku:</div>
+              <ul className="space-y-2 text-sm">
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <span className="text-gray-300">Uporządkowanie oferty: co sprzedajesz i komu (bez chaosu)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <span className="text-gray-300">Cennik + pakiety: jak podnieść stawki i nadal domykać</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <span className="text-gray-300">Prosty system pozyskiwania: DM / ogłoszenia / polecenia (bez reklam)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <span className="text-gray-300">Skrypt rozmowy z klientem (żeby nie było "yyy… zależy")</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <span className="text-gray-300">System obsługi klienta: brief → realizacja → odbiór → upsell</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <span className="text-gray-300">Checklista dowozu jakości (żeby nie robić poprawek w nieskończoność)</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <span className="text-gray-300">Jak przestać tonąć w zadaniach i zacząć dowozić tygodniami</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <Check className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <span className="text-gray-300">Plan: więcej klientów albo mniej klientów, ale droższych (wybór strategii)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="mt-auto">
+              <a href="https://buy.stripe.com/4gwaHr4qVbi69BCanO" target="_blank" rel="noopener noreferrer" className="block">
+                <button className="w-full px-6 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-400 hover:to-indigo-500 transition-all font-semibold shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40">
+                  Przejdź do Service Growth Lab
+                </button>
+              </a>
+              <p className="text-xs text-gray-500 text-center mt-2">Płatność bezpieczna (Stripe) → instrukcje na mailu</p>
+            </div>
           </Card>
+        </div>
+
+        <div className="max-w-3xl mx-auto mt-12 text-center">
+          <div className="bg-white/5 backdrop-blur-xl rounded-xl border border-white/10 p-6">
+            <p className="text-sm text-gray-400 italic">
+              Nie obiecujemy zarobków. Dostajesz plan, narzędzia i feedback – wynik zależy od wdrożenia.
+            </p>
+          </div>
         </div>
       </Section>
 
@@ -306,7 +468,7 @@ export default function Programy() {
         </div>
       </Section>
 
-      <Section id="diagnoza" hasBorder className="bg-gradient-to-br from-cyan-500/5 to-blue-500/5">
+      <Section hasBorder className="bg-gradient-to-br from-cyan-500/5 to-blue-500/5">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
             Nie wiesz co wybrać?
