@@ -66,12 +66,12 @@ export default function Navigation() {
             >
               Kontakt
             </Link>
-            <button
-              onClick={() => handleNavigation('/', 'kontakt')}
+            <Link
+              to="/konsultacja"
               className="px-5 py-2.5 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 transition-all font-medium shadow-lg shadow-cyan-500/20"
             >
               Umów Konsultację
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Hamburger */}
@@ -115,12 +115,13 @@ export default function Navigation() {
               >
                 Kontakt
               </Link>
-              <button
-                onClick={() => handleNavigation('/', 'kontakt')}
+              <Link
+                to="/konsultacja"
+                onClick={() => setIsMenuOpen(false)}
                 className="px-5 py-2.5 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 transition-all font-medium shadow-lg shadow-cyan-500/20 text-center"
               >
                 Umów Konsultację
-              </button>
+              </Link>
             </div>
           </div>
         )}

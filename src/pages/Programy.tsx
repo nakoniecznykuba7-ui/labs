@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { ShoppingCart, Sparkles, Briefcase, Check, Clock, Coins, AlertCircle, Target } from 'lucide-react';
 import Badge from '../components/ui/Badge';
 import Button from '../components/ui/Button';
@@ -27,13 +28,14 @@ export default function Programy() {
             </p>
 
             <div className="flex justify-center pt-6">
-              <Button
-                variant="primary"
-                size="lg"
-                onClick={() => document.getElementById('kontakt')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                Umów konsultację
-              </Button>
+              <Link to="/konsultacja">
+                <Button
+                  variant="primary"
+                  size="lg"
+                >
+                  Umów konsultację
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -350,13 +352,14 @@ export default function Programy() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              variant="primary"
-              size="lg"
-              onClick={() => document.getElementById('kontakt')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              Umów konsultację
-            </Button>
+            <Link to="/konsultacja">
+              <Button
+                variant="primary"
+                size="lg"
+              >
+                Umów konsultację
+              </Button>
+            </Link>
             <Button
               variant="secondary"
               size="lg"
