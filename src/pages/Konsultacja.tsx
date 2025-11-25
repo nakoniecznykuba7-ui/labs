@@ -7,7 +7,7 @@ import Card from '../components/ui/Card';
 import Section from '../components/ui/Section';
 
 export default function Konsultacja() {
-  usePageTitle('Umów konsultację | EarningLab');
+  usePageTitle('Umów konsultację – EarningLab');
   const [formData, setFormData] = useState({
     name: '',
     email: '',

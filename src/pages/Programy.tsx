@@ -7,7 +7,7 @@ import Card from '../components/ui/Card';
 import Section from '../components/ui/Section';
 
 export default function Programy() {
-  usePageTitle('Programy | EarningLab');
+  usePageTitle('Programy EarningLab');
   return (
     <>
       <section className="pt-20 md:pt-24 pb-12 md:pb-16 px-6">

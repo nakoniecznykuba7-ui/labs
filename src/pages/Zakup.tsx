@@ -4,7 +4,7 @@ import { usePageTitle } from '../hooks/usePageTitle';
 import Button from '../components/ui/Button';
 
 export default function Zakup() {
-  usePageTitle('Dziękujemy za zakup | EarningLab');
+  usePageTitle('Dziękujemy za zakup – EarningLab');
 
   const navigate = useNavigate();
 

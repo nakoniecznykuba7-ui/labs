@@ -5,7 +5,7 @@ import Section from '../components/ui/Section';
 import Button from '../components/ui/Button';
 
 export default function Kontakt() {
-  usePageTitle('Kontakt | EarningLab');
+  usePageTitle('Kontakt – EarningLab');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
