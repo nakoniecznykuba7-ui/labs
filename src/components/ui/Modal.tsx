@@ -44,14 +44,16 @@ export default function Modal({ isOpen, onClose, children }: ModalProps) {
         ref={modalRef}
         className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto bg-gray-900/95 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl"
       >
-        <button
-          onClick={onClose}
-          className="sticky top-4 float-right mr-4 mt-4 p-3 min-w-[44px] min-h-[44px] rounded-lg bg-white/5 hover:bg-white/10 transition-colors border border-white/10 flex items-center justify-center"
-          aria-label="Close modal"
-        >
-          <X className="w-5 h-5" />
-        </button>
-        <div className="px-8 pb-32">
+        <div className="sticky top-0 z-10 flex justify-end p-4 bg-gradient-to-b from-gray-900/95 to-transparent pointer-events-none">
+          <button
+            onClick={onClose}
+            className="pointer-events-auto p-3 min-w-[44px] min-h-[44px] rounded-lg bg-white/5 hover:bg-white/10 transition-colors border border-white/10 flex items-center justify-center"
+            aria-label="Close modal"
+          >
+            <X className="w-5 h-5" />
+          </button>
+        </div>
+        <div className="px-8 pb-32 -mt-16">
           {children}
         </div>
       </div>
