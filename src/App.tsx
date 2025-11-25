@@ -3,6 +3,7 @@ import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Programy from './pages/Programy';
+import Kontakt from './pages/Kontakt';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/programy" element={<Programy />} />
+        <Route path="/kontakt" element={<Kontakt />} />
       </Routes>
       <Footer />
     </div>
