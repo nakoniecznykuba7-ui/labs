@@ -238,7 +238,7 @@ export default function Wyniki() {
               Case studies + konkretne metryki. Bez magii, bez teorii — proces, decyzje i efekty.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
               <Link to="/konsultacja">
                 <Button variant="primary" size="lg">
                   Umów konsultację
