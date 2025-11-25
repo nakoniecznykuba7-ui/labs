@@ -28,17 +28,6 @@ export default function Programy() {
               3 ścieżki: <strong>E-commerce</strong>, <strong>AI Skill</strong>, <strong>Service</strong>.
               Dostajesz plan + zadania + feedback 1:1. Zero teorii – same działania prowadzące do wyniku.
             </p>
-
-            <div className="flex justify-center pt-6">
-              <Link to="/konsultacja">
-                <Button
-                  variant="primary"
-                  size="lg"
-                >
-                  Umów konsultację
-                </Button>
-              </Link>
-            </div>
           </div>
         </div>
       </section>
