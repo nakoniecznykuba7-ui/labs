@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import NewLogo from '../assets/file_00000000d44071f48e60637bce259b95.png';
+import NewLogo from '../assets/logo.svg';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

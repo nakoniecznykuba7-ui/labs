@@ -1,4 +1,4 @@
-import NewLogo from '../assets/file_00000000d44071f48e60637bce259b95.png';
+import NewLogo from '../assets/logo.svg';
 
 export default function Footer() {
   return (
