@@ -118,7 +118,7 @@ export default function DashboardMockup() {
         {/* Status Footer */}
         <div className="mt-4 flex items-center justify-between text-xs">
           <span className="text-gray-500">Ostatnia aktualizacja: dziś</span>
-          <span className="text-cyan-400 font-medium">Krok 1/7 ukończony</span>
+          <span className="text-cyan-400 font-medium">Krok 2/7 ukończony</span>
         </div>
       </div>
 
