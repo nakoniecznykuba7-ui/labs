@@ -340,7 +340,7 @@ export default function Programy() {
 
               <div className="pt-2 border-t border-white/10">
                 <p className="text-sm font-semibold text-cyan-400 mb-1">Idealny start:</p>
-                <p className="text-sm text-gray-300">Masz pomysł na produkt lub niszę, chcesz szybko zweryfikować, czy się sprzeda</p>
+                <p className="text-sm text-gray-300">Masz pomysł na produkt lub niszę, chcesz szybko zweryfikować, czy się sprzeda, lub chcesz pomoc od zera</p>
               </div>
             </div>
           </Card>
