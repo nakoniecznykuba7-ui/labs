@@ -232,15 +232,6 @@ Skąd się dowiedział: ${formData.source || 'Nie podano'}
               >
                 Wypełnij formularz
               </Button>
-              <Button
-                variant="secondary"
-                size="lg"
-                onClick={() =>
-                  document.getElementById('jak-wyglada')?.scrollIntoView({ behavior: 'smooth' })
-                }
-              >
-                Zobacz, jak wygląda konsultacja
-              </Button>
             </div>
           </div>
         </div>
