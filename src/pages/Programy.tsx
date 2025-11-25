@@ -103,7 +103,7 @@ export default function Programy() {
         <div className="text-center mb-10 mt-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-3">Wybierz program</h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Każdy program prowadzi do konkretnego wyniku. 169 zł jednorazowo, bez subskrypcji.
+            Każdy program prowadzi do konkretnego wyniku.
           </p>
         </div>
 
@@ -119,10 +119,8 @@ export default function Programy() {
             <h3 className="text-2xl font-bold mb-2">EcomLab</h3>
             <p className="text-cyan-400 text-sm font-semibold mb-4">E-commerce & Dropshipping</p>
 
-            <div className="mb-6 pb-6 border-b border-white/10">
-              <div className="text-4xl font-bold mb-1">169 zł</div>
-              <div className="text-sm text-gray-400">jednorazowo, bez subskrypcji</div>
-              <div className="text-xs text-gray-500 mt-2 italic">Dla osób, które chcą pierwszych zamówień, a nie perfekcyjnego sklepu.</div>
+            <div className="mb-4">
+              <div className="text-xs text-gray-400 italic">Dla osób, które chcą pierwszych zamówień, a nie perfekcyjnego sklepu.</div>
             </div>
 
             <div className="mb-6 flex-grow">
@@ -184,10 +182,8 @@ export default function Programy() {
             <h3 className="text-2xl font-bold mb-2">AI Skill Lab</h3>
             <p className="text-purple-400 text-sm font-semibold mb-4">Umiejętności + AI</p>
 
-            <div className="mb-6 pb-6 border-b border-white/10">
-              <div className="text-4xl font-bold mb-1">169 zł</div>
-              <div className="text-sm text-gray-400">jednorazowo, bez subskrypcji</div>
-              <div className="text-xs text-gray-500 mt-2 italic">Dla osób, które chcą sprzedawać skill, a AI ma być dźwignią – nie zabawką.</div>
+            <div className="mb-4">
+              <div className="text-xs text-gray-400 italic">Dla osób, które chcą sprzedawać skill, a AI ma być dźwignią – nie zabawką.</div>
             </div>
 
             <div className="mb-6 flex-grow">
@@ -249,10 +245,8 @@ export default function Programy() {
             <h3 className="text-2xl font-bold mb-2">Service Growth Lab</h3>
             <p className="text-blue-400 text-sm font-semibold mb-4">Freelance & Skalowanie</p>
 
-            <div className="mb-6 pb-6 border-b border-white/10">
-              <div className="text-4xl font-bold mb-1">169 zł</div>
-              <div className="text-sm text-gray-400">jednorazowo, bez subskrypcji</div>
-              <div className="text-xs text-gray-500 mt-2 italic">Dla osób, które już coś robią i chcą to w końcu ogarnąć jak system.</div>
+            <div className="mb-4">
+              <div className="text-xs text-gray-400 italic">Dla osób, które już coś robią i chcą to w końcu ogarnąć jak system.</div>
             </div>
 
             <div className="mb-6 flex-grow">
@@ -302,14 +296,6 @@ export default function Programy() {
               <p className="text-xs text-gray-500 text-center mt-2">Płatność bezpieczna (Stripe) → instrukcje na mailu</p>
             </div>
           </Card>
-        </div>
-
-        <div className="max-w-3xl mx-auto mt-12 text-center">
-          <div className="bg-white/5 backdrop-blur-xl rounded-xl border border-white/10 p-6">
-            <p className="text-sm text-gray-400 italic">
-              Nie obiecujemy zarobków. Dostajesz plan, narzędzia i feedback – wynik zależy od wdrożenia.
-            </p>
-          </div>
         </div>
       </Section>
 
