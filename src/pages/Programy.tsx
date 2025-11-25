@@ -158,7 +158,7 @@ export default function Programy() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">
-          <Card variant="default">
+          <Card variant="default" id="ecomlab">
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <ShoppingCart className="w-6 h-6 text-cyan-400" strokeWidth={2} />
@@ -206,7 +206,7 @@ export default function Programy() {
             </div>
           </Card>
 
-          <Card variant="default">
+          <Card variant="default" id="ai-skill-lab">
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <Sparkles className="w-6 h-6 text-purple-400" strokeWidth={2} />
@@ -254,7 +254,7 @@ export default function Programy() {
             </div>
           </Card>
 
-          <Card variant="default">
+          <Card variant="default" id="service-growth-lab">
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <Briefcase className="w-6 h-6 text-blue-400" strokeWidth={2} />

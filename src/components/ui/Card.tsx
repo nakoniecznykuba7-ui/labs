@@ -4,9 +4,10 @@ interface CardProps {
   children: ReactNode;
   variant?: 'cyan' | 'purple' | 'blue' | 'default';
   className?: string;
+  id?: string;
 }
 
-export default function Card({ children, variant = 'default', className = '' }: CardProps) {
+export default function Card({ children, variant = 'default', className = '', id }: CardProps) {
   const variantClasses = {
     cyan: 'bg-gradient-to-br from-cyan-500/5 to-blue-500/5 border-cyan-500/20 hover:border-cyan-500/40',
     purple:
@@ -17,6 +18,7 @@ export default function Card({ children, variant = 'default', className = '' }: 
 
   return (
     <div
+      id={id}
       className={`backdrop-blur-xl rounded-2xl border p-8 transition-all ${variantClasses[variant]} ${className}`}
     >
       {children}

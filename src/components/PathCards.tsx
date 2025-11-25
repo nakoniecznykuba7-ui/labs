@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { ShoppingCart, Sparkles, Briefcase } from 'lucide-react';
 
 export default function PathCards() {
@@ -49,9 +50,9 @@ export default function PathCards() {
               </p>
             </div>
 
-            <button className="w-full px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 transition-all font-semibold shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40">
+            <Link to="/programy#ecomlab" className="block w-full px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 transition-all font-semibold shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 text-center">
               Zobacz szczegóły EcomLab
-            </button>
+            </Link>
           </div>
 
           <div className="bg-gradient-to-br from-purple-500/5 to-pink-500/5 backdrop-blur-xl rounded-2xl border border-purple-500/20 p-8 hover:border-purple-500/40 transition-all group">
@@ -88,9 +89,9 @@ export default function PathCards() {
               </p>
             </div>
 
-            <button className="w-full px-6 py-3 rounded-xl bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-400 hover:to-pink-500 transition-all font-semibold shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40">
+            <Link to="/programy#ai-skill-lab" className="block w-full px-6 py-3 rounded-xl bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-400 hover:to-pink-500 transition-all font-semibold shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 text-center">
               Zobacz szczegóły AI Skill Lab
-            </button>
+            </Link>
           </div>
 
           <div className="bg-gradient-to-br from-blue-500/5 to-indigo-500/5 backdrop-blur-xl rounded-2xl border border-blue-500/20 p-8 hover:border-blue-500/40 transition-all group">
@@ -127,9 +128,9 @@ export default function PathCards() {
               </p>
             </div>
 
-            <button className="w-full px-6 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-400 hover:to-indigo-500 transition-all font-semibold shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40">
+            <Link to="/programy#service-growth-lab" className="block w-full px-6 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-400 hover:to-indigo-500 transition-all font-semibold shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 text-center">
               Zobacz szczegóły Service Growth Lab
-            </button>
+            </Link>
           </div>
         </div>
       </div>
