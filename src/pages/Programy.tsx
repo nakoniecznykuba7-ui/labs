@@ -180,7 +180,7 @@ export default function Programy() {
                   <Clock className="w-4 h-4 text-cyan-400" />
                   <span className="text-sm font-semibold text-gray-400">Czas do 1. efektów:</span>
                 </div>
-                <p className="text-sm text-gray-300">2-4 tygodnie (pierwsze zamówienia)</p>
+                <p className="text-sm text-gray-300">2-7 Dni (pierwsze zamówienia)</p>
               </div>
 
               <div>
@@ -188,7 +188,7 @@ export default function Programy() {
                   <Coins className="w-4 h-4 text-cyan-400" />
                   <span className="text-sm font-semibold text-gray-400">Wymagane zasoby:</span>
                 </div>
-                <p className="text-sm text-gray-300">Minimalny budżet 200-500 zł na testy reklam</p>
+                <p className="text-sm text-gray-300">Minimalny budżet 100-300 zł na testy reklam</p>
               </div>
 
               <div>
@@ -228,7 +228,7 @@ export default function Programy() {
                   <Clock className="w-4 h-4 text-purple-400" />
                   <span className="text-sm font-semibold text-gray-400">Czas do 1. efektów:</span>
                 </div>
-                <p className="text-sm text-gray-300">1-3 tygodnie (pierwsze zlecenie)</p>
+                <p className="text-sm text-gray-300">1-5 Dni (pierwsze zlecenie)</p>
               </div>
 
               <div>
@@ -244,7 +244,7 @@ export default function Programy() {
                   <AlertCircle className="w-4 h-4 text-purple-400" />
                   <span className="text-sm font-semibold text-gray-400">Ryzyko:</span>
                 </div>
-                <p className="text-sm text-gray-300">Niskie (brak dużych inwestycji)</p>
+                <p className="text-sm text-gray-300">Niskie (brak wymaganych dużych inwestycji)</p>
               </div>
 
               <div className="pt-2 border-t border-white/10">
@@ -258,7 +258,7 @@ export default function Programy() {
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <Briefcase className="w-6 h-6 text-blue-400" strokeWidth={2} />
-                <h3 className="text-xl font-bold">Service Growth</h3>
+                <h3 className="text-xl font-bold">Service Growth Lab</h3>
               </div>
 
               <div>
@@ -276,7 +276,7 @@ export default function Programy() {
                   <Clock className="w-4 h-4 text-blue-400" />
                   <span className="text-sm font-semibold text-gray-400">Czas do 1. efektów:</span>
                 </div>
-                <p className="text-sm text-gray-300">1-2 tygodnie (nowy klient)</p>
+                <p className="text-sm text-gray-300">5-10 Dni (nowy klient)</p>
               </div>
 
               <div>
