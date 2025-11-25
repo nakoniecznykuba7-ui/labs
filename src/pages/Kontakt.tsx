@@ -59,7 +59,7 @@ export default function Kontakt() {
 
     try {
       const formPayload = new FormData();
-      formPayload.append('access_key', '76447824-a167-4bd7-877c-691fc19fa990');
+      formPayload.append('access_key', '86cbb94c-68e4-45a1-9b3f-0fff3d973d5f');
       formPayload.append('from_name', 'EarningLab Kontakt');
       formPayload.append('subject', 'Nowa wiadomość z formularza kontaktowego EarningLab');
       formPayload.append('name', formData.name);
@@ -106,7 +106,7 @@ export default function Kontakt() {
 
   return (
     <>
-      <section className="pt-20 md:pt-24 pb-12 md:pb-16 px-6">
+      <section className="pt-28 md:pt-36 pb-8 md:pb-10 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center space-y-4">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
@@ -118,23 +118,20 @@ export default function Kontakt() {
               Napisz – odpowiemy możliwie szybko.
             </p>
 
-            <div className="flex items-center justify-center gap-3 pt-4">
-              <Mail className="w-5 h-5 text-cyan-400" />
-              <div className="text-left">
-                <div className="text-sm text-gray-400">E-mail</div>
-                <a
-                  href="mailto:kontakt@earninglab.pl"
-                  className="text-lg font-semibold text-cyan-400 hover:text-cyan-300 transition-colors"
-                >
-                  kontakt@earninglab.pl
-                </a>
-              </div>
+            <div className="flex items-center justify-center gap-2 pt-6">
+              <Mail className="w-5 h-5 text-[#00baff]" strokeWidth={1.5} />
+              <a
+                href="mailto:kontakt@earninglab.pl"
+                className="text-lg font-medium text-[#00baff] hover:text-cyan-300 transition-colors"
+              >
+                kontakt@earninglab.pl
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <Section>
+      <section className="py-6 md:py-8 px-6">
         <div className="max-w-xl mx-auto">
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
@@ -221,7 +218,7 @@ export default function Kontakt() {
               <div className="flex items-start gap-3 p-4 bg-green-500/10 border border-green-500/30 rounded-lg">
                 <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
                 <div className="text-sm text-green-300">
-                  <strong>Dzięki!</strong> Dostaliśmy Twoją wiadomość. Odezwiemy się maksymalnie w 24h (w dni robocze).
+                  <strong>Dzięki!</strong> Dostaliśmy Twoją wiadomość. Odezwiemy się maksymalnie w 6 godzin.
                 </div>
               </div>
             )}
@@ -239,7 +236,7 @@ export default function Kontakt() {
             )}
           </form>
         </div>
-      </Section>
+      </section>
     </>
   );
 }
