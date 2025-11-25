@@ -6,12 +6,14 @@ import Button from '../components/ui/Button';
 export default function Kontakt() {
   const [formData, setFormData] = useState({
     name: '',
+    email: '',
     subject: '',
     message: '',
   });
 
   const [errors, setErrors] = useState({
     name: '',
+    email: '',
     subject: '',
     message: '',
   });
@@ -22,6 +24,7 @@ export default function Kontakt() {
   const validateForm = () => {
     const newErrors = {
       name: '',
+      email: '',
       subject: '',
       message: '',
     };
@@ -30,6 +33,14 @@ export default function Kontakt() {
 
     if (!formData.name.trim()) {
       newErrors.name = 'Imię jest wymagane';
+      isValid = false;
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = 'Email jest wymagany';
+      isValid = false;
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = 'Podaj poprawny adres email';
       isValid = false;
     }
 
@@ -63,6 +74,7 @@ export default function Kontakt() {
       formPayload.append('from_name', 'EarningLab Kontakt');
       formPayload.append('subject', 'Nowa wiadomość z formularza kontaktowego EarningLab');
       formPayload.append('name', formData.name);
+      formPayload.append('email', formData.email);
       formPayload.append('user_subject', formData.subject);
       formPayload.append('message', formData.message);
 
@@ -77,6 +89,7 @@ export default function Kontakt() {
         setSubmitStatus('success');
         setFormData({
           name: '',
+          email: '',
           subject: '',
           message: '',
         });
@@ -133,6 +146,9 @@ export default function Kontakt() {
 
       <section className="py-6 md:py-8 px-6">
         <div className="max-w-xl mx-auto">
+          <p className="text-center text-gray-300 mb-8">
+            Jeśli wolisz szybszy kontakt niż mail — wypełnij formularz poniżej.
+          </p>
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
@@ -151,6 +167,26 @@ export default function Kontakt() {
               />
               {errors.name && (
                 <p className="mt-1 text-sm text-red-400">{errors.name}</p>
+              )}
+            </div>
+
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${
+                  errors.email ? 'border-red-500' : 'border-white/10'
+                } focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/20 transition-all text-white placeholder-gray-500`}
+                placeholder="twoj@email.pl"
+              />
+              {errors.email && (
+                <p className="mt-1 text-sm text-red-400">{errors.email}</p>
               )}
             </div>
 
@@ -218,7 +254,7 @@ export default function Kontakt() {
               <div className="flex items-start gap-3 p-4 bg-green-500/10 border border-green-500/30 rounded-lg">
                 <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
                 <div className="text-sm text-green-300">
-                  <strong>Dzięki!</strong> Dostaliśmy Twoją wiadomość. Odezwiemy się maksymalnie w 6 godzin.
+                  <strong>Dzięki!</strong> Dostaliśmy Twoją wiadomość. Odezwę się maksymalnie w 6 godzin.
                 </div>
               </div>
             )}
