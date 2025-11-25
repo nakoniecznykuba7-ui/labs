@@ -24,7 +24,7 @@ export default function Programy() {
 
             <p className="text-lg text-gray-300 max-w-3xl mx-auto">
               3 ścieżki: <strong>E-commerce</strong>, <strong>AI Skill</strong>, <strong>Service</strong>.
-              Dostajesz plan + zadania + feedback 1:1. Zero teorii — same działania prowadzące do wyniku.
+              Dostajesz plan + zadania + feedback 1:1. Zero teorii – same działania prowadzące do wyniku.
             </p>
 
             <div className="flex justify-center pt-6">
