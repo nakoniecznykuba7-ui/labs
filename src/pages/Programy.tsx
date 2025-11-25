@@ -109,7 +109,7 @@ export default function Programy() {
             <p className="text-cyan-400 text-sm font-semibold mb-4">E-commerce & Dropshipping</p>
 
             <div className="mb-4">
-              <div className="text-xs text-gray-400 italic">Dla osób, które chcą pierwszych zamówień, a nie perfekcyjnego sklepu.</div>
+              <div className="text-xs text-gray-400 italic">Dla osób, które chcą pierwszych zamówień, bez godzin teorii.</div>
             </div>
 
             <div className="mb-6 flex-grow">
@@ -310,7 +310,7 @@ export default function Programy() {
                   <span className="text-sm font-semibold text-gray-400">Dla kogo:</span>
                 </div>
                 <p className="text-sm text-gray-300">
-                  Osoby, które chcą sprzedawać produkty (fizyczne lub cyfrowe) bez budowania własnego brandu od zera
+                  Osoby, które chcą sprzedawać produkty (fizyczne lub cyfrowe) bez budowania własnego brandu od zera, lub nie mają dokładnego planu działania
                 </p>
               </div>
 
