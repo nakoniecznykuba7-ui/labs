@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -27,6 +28,9 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0a0e1a] via-[#0d1228] to-[#0a0e1a] text-white">
+      <Helmet defaultTitle="Zacznij Zarabiać Online" titleTemplate="%s - EarningLab">
+        <title>Zacznij Zarabiać Online</title>
+      </Helmet>
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
