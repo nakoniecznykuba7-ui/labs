@@ -50,7 +50,7 @@ export default function PathCards() {
               </p>
             </div>
 
-            <Link to="/programy#ecomlab" className="block w-full px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 transition-all font-semibold shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 text-center">
+            <Link to="/programy#programy-list" className="block w-full px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 transition-all font-semibold shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 text-center">
               Zobacz szczegóły EcomLab
             </Link>
           </div>
@@ -89,7 +89,7 @@ export default function PathCards() {
               </p>
             </div>
 
-            <Link to="/programy#ai-skill-lab" className="block w-full px-6 py-3 rounded-xl bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-400 hover:to-pink-500 transition-all font-semibold shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 text-center">
+            <Link to="/programy#programy-list" className="block w-full px-6 py-3 rounded-xl bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-400 hover:to-pink-500 transition-all font-semibold shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 text-center">
               Zobacz szczegóły AI Skill Lab
             </Link>
           </div>
@@ -128,7 +128,7 @@ export default function PathCards() {
               </p>
             </div>
 
-            <Link to="/programy#service-growth-lab" className="block w-full px-6 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-400 hover:to-indigo-500 transition-all font-semibold shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 text-center">
+            <Link to="/programy#programy-list" className="block w-full px-6 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-400 hover:to-indigo-500 transition-all font-semibold shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 text-center">
               Zobacz szczegóły Service Growth Lab
             </Link>
           </div>

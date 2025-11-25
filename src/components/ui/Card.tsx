@@ -19,7 +19,7 @@ export default function Card({ children, variant = 'default', className = '', id
   return (
     <div
       id={id}
-      className={`backdrop-blur-xl rounded-2xl border p-8 transition-all ${variantClasses[variant]} ${className}`}
+      className={`backdrop-blur-xl rounded-2xl border p-8 transition-all ${id ? 'scroll-mt-24' : ''} ${variantClasses[variant]} ${className}`}
     >
       {children}
     </div>
