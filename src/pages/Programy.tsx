@@ -26,20 +26,13 @@ export default function Programy() {
               Dostajesz plan + zadania + feedback 1:1. Zero teorii — same działania prowadzące do wyniku.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+            <div className="flex justify-center pt-6">
               <Button
                 variant="primary"
                 size="lg"
                 onClick={() => document.getElementById('kontakt')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Umów konsultację
-              </Button>
-              <Button
-                variant="secondary"
-                size="lg"
-                onClick={() => document.getElementById('diagnoza')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                Zrób 10-min diagnozę
               </Button>
             </div>
           </div>
