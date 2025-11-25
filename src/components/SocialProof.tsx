@@ -149,13 +149,13 @@ export default function SocialProof() {
           </div>
         </div>
 
-        <div className="text-center space-y-4">
+        <div className="text-center space-y-6">
           <p className="text-sm text-gray-400 bg-white/5 rounded-lg p-4 inline-block border border-white/5 max-w-3xl">
             Efekty zależą od Twojego zaangażowania – my dajemy plan i korekty, ale za Ciebie nikt nie zrobi roboty.
           </p>
-          <div>
+          <div className="flex justify-center">
             <Link to="/wyniki">
-              <Button variant="secondary" size="md">
+              <Button variant="primary" size="lg">
                 Zobacz więcej Wyników
               </Button>
             </Link>
