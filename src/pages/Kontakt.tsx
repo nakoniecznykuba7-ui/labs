@@ -146,7 +146,7 @@ export default function Kontakt() {
       <section className="py-6 md:py-8 px-6">
         <div className="max-w-xl mx-auto">
           <p className="text-center text-gray-300 mb-8">
-            Jeśli wolisz szybszy kontakt niż mail — wypełnij formularz poniżej.
+            Jeśli wolisz szybszy kontakt niż mail – wypełnij formularz poniżej.
           </p>
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
