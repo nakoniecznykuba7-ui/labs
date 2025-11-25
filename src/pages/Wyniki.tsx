@@ -255,25 +255,18 @@ export default function Wyniki() {
       </section>
 
       <Section hasBorder>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           <Card variant="cyan">
             <div className="text-center">
-              <div className="text-3xl font-bold mb-2">7–21 dni*</div>
+              <div className="text-3xl font-bold mb-2">1–5 dni*</div>
               <div className="text-gray-300">Czas do 1. efektu</div>
             </div>
           </Card>
 
           <Card variant="purple">
             <div className="text-center">
-              <div className="text-3xl font-bold mb-2">0→1</div>
+              <div className="text-3xl font-bold mb-2">0→1 Dni</div>
               <div className="text-gray-300">Najczęstszy start</div>
-            </div>
-          </Card>
-
-          <Card variant="blue">
-            <div className="text-center">
-              <div className="text-3xl font-bold mb-2">Oferta + egzekucja</div>
-              <div className="text-gray-300 text-sm">Największa dźwignia</div>
             </div>
           </Card>
 
