@@ -360,13 +360,6 @@ export default function Programy() {
                 Umów konsultację
               </Button>
             </Link>
-            <Button
-              variant="secondary"
-              size="lg"
-              onClick={() => alert('Formularz diagnostyczny - w przygotowaniu')}
-            >
-              Zobacz przykładowy plan
-            </Button>
           </div>
 
           <p className="text-sm text-gray-400 mt-6 italic">
