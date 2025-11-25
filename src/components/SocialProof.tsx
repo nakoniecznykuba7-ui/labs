@@ -1,4 +1,6 @@
 import { TrendingUp } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import Button from './ui/Button';
 
 export default function SocialProof() {
   return (
@@ -147,10 +149,17 @@ export default function SocialProof() {
           </div>
         </div>
 
-        <div className="text-center">
+        <div className="text-center space-y-4">
           <p className="text-sm text-gray-400 bg-white/5 rounded-lg p-4 inline-block border border-white/5 max-w-3xl">
             Efekty zależą od Twojego zaangażowania – my dajemy plan i korekty, ale za Ciebie nikt nie zrobi roboty.
           </p>
+          <div>
+            <Link to="/wyniki">
+              <Button variant="secondary" size="md">
+                Zobacz więcej Wyników
+              </Button>
+            </Link>
+          </div>
         </div>
       </div>
     </section>
