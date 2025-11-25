@@ -151,7 +151,7 @@ export default function Programy() {
             </div>
 
             <div className="mt-auto">
-              <a href="https://buy.stripe.com/28o8zj4qV7TGaFG4gg" target="_blank" rel="noopener noreferrer" className="block">
+              <a href="https://buy.stripe.com/eVq9AS55r5tr7V75qa24001" target="_blank" rel="noopener noreferrer" className="block">
                 <Button variant="primary" className="w-full">
                   Przejdź do EcomLab
                 </Button>
@@ -214,7 +214,7 @@ export default function Programy() {
             </div>
 
             <div className="mt-auto">
-              <a href="https://buy.stripe.com/5kA5n76z3g0mbJK145" target="_blank" rel="noopener noreferrer" className="block">
+              <a href="https://buy.stripe.com/cNi9AS8hD9JH7V7dWG24002" target="_blank" rel="noopener noreferrer" className="block">
                 <button className="w-full px-6 py-3 rounded-xl bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-400 hover:to-pink-500 transition-all font-semibold shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40">
                   Przejdź do AI Skill Lab
                 </button>
@@ -277,7 +277,7 @@ export default function Programy() {
             </div>
 
             <div className="mt-auto">
-              <a href="https://buy.stripe.com/4gwaHr4qVbi69BCanO" target="_blank" rel="noopener noreferrer" className="block">
+              <a href="https://buy.stripe.com/aFabJ055r0978Zb7yi24003" target="_blank" rel="noopener noreferrer" className="block">
                 <button className="w-full px-6 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-400 hover:to-indigo-500 transition-all font-semibold shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40">
                   Przejdź do Service Growth Lab
                 </button>
