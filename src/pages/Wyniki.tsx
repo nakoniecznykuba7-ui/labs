@@ -691,7 +691,7 @@ export default function Wyniki() {
         </div>
       </Section>
 
-      <Modal isOpen={selectedCase !== null} onClose={() => setSelectedCase(null)}>
+      <Modal isOpen={selectedCase !== null} onClose={() => setSelectedCase(null)} variant={selectedCase ? getProgramBadgeVariant(selectedCase.program) : 'default'}>
         {selectedCase && (
           <div className="relative">
             <div className="mb-6 pt-4">
