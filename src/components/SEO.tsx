@@ -45,6 +45,11 @@ export default function SEO({
       <meta name="theme-color" content="#070A12" />
       <meta name="application-name" content="EarningLab" />
 
+      <link rel="icon" href="/favicon.ico" sizes="any" />
+      <link rel="icon" type="image/png" href="/favicon.png" sizes="512x512" />
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      <link rel="manifest" href="/manifest.json" />
+
       <meta property="og:title" content={finalOgTitle} />
       <meta property="og:description" content={finalOgDescription} />
       <meta property="og:url" content={fullURL} />
