@@ -701,7 +701,7 @@ export default function Wyniki() {
               <h2 className="text-3xl font-bold">{selectedCase.title}</h2>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-6 pb-[140px] md:pb-0">
               <div className="pb-6 border-b border-white/10">
                 <h3 className="text-lg font-semibold text-cyan-400 mb-2">Start</h3>
                 <p className="text-gray-200">{selectedCase.start}</p>
@@ -749,7 +749,7 @@ export default function Wyniki() {
               </div>
             </div>
 
-            <div className="fixed bottom-0 left-0 right-0 p-6 bg-gray-900/98 backdrop-blur-xl border-t border-white/10 flex flex-col sm:flex-row gap-3">
+            <div className="fixed bottom-0 left-0 right-0 p-6 bg-gray-900/98 backdrop-blur-xl border-t border-white/10 flex flex-col sm:flex-row gap-3 shadow-[0_-4px_16px_rgba(0,0,0,0.3)]">
               <Link to="/programy" className="flex-1">
                 <Button variant="primary" className="w-full h-12">
                   Wybierz program dla siebie
