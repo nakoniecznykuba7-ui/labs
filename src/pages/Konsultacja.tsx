@@ -434,104 +434,138 @@ Skąd się dowiedział: ${formData.source || 'Nie podano'}
             </div>
 
             <div>
-              <label htmlFor="currentStage" className="block text-sm font-medium text-gray-200 mb-2">
+              <label className="block text-sm font-medium text-gray-200 mb-3">
                 Gdzie jesteś teraz? <span className="text-red-400">*</span>
               </label>
-              <select
-                id="currentStage"
-                name="currentStage"
-                value={formData.currentStage}
-                onChange={handleChange}
-                className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${
-                  errors.currentStage ? 'border-red-500' : 'border-white/10'
-                } focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/20 transition-all text-white`}
-              >
-                <option value="">Wybierz opcję</option>
-                <option value="Dopiero startuję – nie mam jeszcze wyników">
-                  Dopiero startuję – nie mam jeszcze wyników
-                </option>
-                <option value="Mam już pierwsze przychody, ale wszystko jest chaotyczne">
-                  Mam już pierwsze przychody, ale wszystko jest chaotyczne
-                </option>
-                <option value="Działam na większą skalę, chcę to poukładać i skalować">
-                  Działam na większą skalę, chcę to poukładać i skalować
-                </option>
-              </select>
+              <div className="space-y-2">
+                {[
+                  'Dopiero startuję – nie mam jeszcze wyników',
+                  'Mam już pierwsze przychody, ale wszystko jest chaotyczne',
+                  'Działam na większą skalę, chcę to poukładać i skalować',
+                ].map((option) => (
+                  <button
+                    key={option}
+                    type="button"
+                    onClick={() => {
+                      setFormData((prev) => ({ ...prev, currentStage: option }));
+                      if (errors.currentStage) {
+                        setErrors((prev) => ({ ...prev, currentStage: '' }));
+                      }
+                    }}
+                    className={`w-full min-h-[44px] px-4 py-3 rounded-lg backdrop-blur-xl border transition-all text-left ${
+                      formData.currentStage === option
+                        ? 'bg-cyan-500/10 border-cyan-500/50 ring-2 ring-cyan-500/20 shadow-[0_0_12px_rgba(6,182,212,0.15)]'
+                        : errors.currentStage
+                        ? 'bg-white/5 border-red-500 hover:bg-white/10'
+                        : 'bg-white/5 border-white/10 hover:bg-white/10 hover:border-cyan-500/30'
+                    }`}
+                  >
+                    <span className="text-white text-sm">{option}</span>
+                  </button>
+                ))}
+                <input type="hidden" name="currentStage" value={formData.currentStage} />
+              </div>
               {errors.currentStage && (
                 <p className="mt-1 text-sm text-red-400">{errors.currentStage}</p>
               )}
             </div>
 
             <div>
-              <label htmlFor="program" className="block text-sm font-medium text-gray-200 mb-2">
+              <label className="block text-sm font-medium text-gray-200 mb-3">
                 Który program najbardziej Cię interesuje? <span className="text-red-400">*</span>
               </label>
-              <select
-                id="program"
-                name="program"
-                value={formData.program}
-                onChange={handleChange}
-                className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${
-                  errors.program ? 'border-red-500' : 'border-white/10'
-                } focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/20 transition-all text-white`}
-              >
-                <option value="">Wybierz opcję</option>
-                <option value="Nie wiem – pomóżcie wybrać">Nie wiem – pomóżcie wybrać</option>
-                <option value="EcomLab (e-commerce & dropshipping)">
-                  EcomLab (e-commerce & dropshipping)
-                </option>
-                <option value="AI Skill Lab (umiejętności + AI)">
-                  AI Skill Lab (umiejętności + AI)
-                </option>
-                <option value="Service Growth Lab (freelance & usługi)">
-                  Service Growth Lab (freelance & usługi)
-                </option>
-              </select>
+              <div className="space-y-2">
+                {[
+                  'Nie wiem – pomóżcie wybrać',
+                  'EcomLab (e-commerce & dropshipping)',
+                  'AI Skill Lab (umiejętności + AI)',
+                  'Service Growth Lab (freelance & usługi)',
+                ].map((option) => (
+                  <button
+                    key={option}
+                    type="button"
+                    onClick={() => {
+                      setFormData((prev) => ({ ...prev, program: option }));
+                      if (errors.program) {
+                        setErrors((prev) => ({ ...prev, program: '' }));
+                      }
+                    }}
+                    className={`w-full min-h-[44px] px-4 py-3 rounded-lg backdrop-blur-xl border transition-all text-left ${
+                      formData.program === option
+                        ? 'bg-purple-500/10 border-purple-500/50 ring-2 ring-purple-500/20 shadow-[0_0_12px_rgba(168,85,247,0.15)]'
+                        : errors.program
+                        ? 'bg-white/5 border-red-500 hover:bg-white/10'
+                        : 'bg-white/5 border-white/10 hover:bg-white/10 hover:border-purple-500/30'
+                    }`}
+                  >
+                    <span className="text-white text-sm">{option}</span>
+                  </button>
+                ))}
+                <input type="hidden" name="program" value={formData.program} />
+              </div>
               {errors.program && <p className="mt-1 text-sm text-red-400">{errors.program}</p>}
             </div>
 
             <div>
-              <label htmlFor="budget" className="block text-sm font-medium text-gray-200 mb-2">
+              <label className="block text-sm font-medium text-gray-200 mb-3">
                 Budżet na start <span className="text-red-400">*</span>
               </label>
-              <select
-                id="budget"
-                name="budget"
-                value={formData.budget}
-                onChange={handleChange}
-                className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${
-                  errors.budget ? 'border-red-500' : 'border-white/10'
-                } focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/20 transition-all text-white`}
-              >
-                <option value="">Wybierz opcję</option>
-                <option value="0–200 zł">0–200 zł</option>
-                <option value="200–500 zł">200–500 zł</option>
-                <option value="500–2000 zł">500–2000 zł</option>
-                <option value="Powyżej 2000 zł">Powyżej 2000 zł</option>
-              </select>
+              <div className="grid grid-cols-2 gap-2">
+                {['0–200 zł', '200–500 zł', '500–2000 zł', 'Powyżej 2000 zł'].map((option) => (
+                  <button
+                    key={option}
+                    type="button"
+                    onClick={() => {
+                      setFormData((prev) => ({ ...prev, budget: option }));
+                      if (errors.budget) {
+                        setErrors((prev) => ({ ...prev, budget: '' }));
+                      }
+                    }}
+                    className={`min-h-[44px] px-4 py-3 rounded-lg backdrop-blur-xl border transition-all text-center ${
+                      formData.budget === option
+                        ? 'bg-blue-500/10 border-blue-500/50 ring-2 ring-blue-500/20 shadow-[0_0_12px_rgba(59,130,246,0.15)]'
+                        : errors.budget
+                        ? 'bg-white/5 border-red-500 hover:bg-white/10'
+                        : 'bg-white/5 border-white/10 hover:bg-white/10 hover:border-blue-500/30'
+                    }`}
+                  >
+                    <span className="text-white text-sm">{option}</span>
+                  </button>
+                ))}
+                <input type="hidden" name="budget" value={formData.budget} />
+              </div>
               {errors.budget && <p className="mt-1 text-sm text-red-400">{errors.budget}</p>}
             </div>
 
             <div>
-              <label htmlFor="timeWeekly" className="block text-sm font-medium text-gray-200 mb-2">
+              <label className="block text-sm font-medium text-gray-200 mb-3">
                 Ile realnie czasu tygodniowo możesz poświęcić?{' '}
                 <span className="text-red-400">*</span>
               </label>
-              <select
-                id="timeWeekly"
-                name="timeWeekly"
-                value={formData.timeWeekly}
-                onChange={handleChange}
-                className={`w-full px-4 py-3 rounded-lg bg-white/5 border ${
-                  errors.timeWeekly ? 'border-red-500' : 'border-white/10'
-                } focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/20 transition-all text-white`}
-              >
-                <option value="">Wybierz opcję</option>
-                <option value="5–7 godzin">5–7 godzin</option>
-                <option value="8–15 godzin">8–15 godzin</option>
-                <option value="16–25 godzin">16–25 godzin</option>
-                <option value="Ponad 25 godzin">Ponad 25 godzin</option>
-              </select>
+              <div className="grid grid-cols-2 gap-2">
+                {['5–7 godzin', '8–15 godzin', '16–25 godzin', 'Ponad 25 godzin'].map((option) => (
+                  <button
+                    key={option}
+                    type="button"
+                    onClick={() => {
+                      setFormData((prev) => ({ ...prev, timeWeekly: option }));
+                      if (errors.timeWeekly) {
+                        setErrors((prev) => ({ ...prev, timeWeekly: '' }));
+                      }
+                    }}
+                    className={`min-h-[44px] px-4 py-3 rounded-lg backdrop-blur-xl border transition-all text-center ${
+                      formData.timeWeekly === option
+                        ? 'bg-cyan-500/10 border-cyan-500/50 ring-2 ring-cyan-500/20 shadow-[0_0_12px_rgba(6,182,212,0.15)]'
+                        : errors.timeWeekly
+                        ? 'bg-white/5 border-red-500 hover:bg-white/10'
+                        : 'bg-white/5 border-white/10 hover:bg-white/10 hover:border-cyan-500/30'
+                    }`}
+                  >
+                    <span className="text-white text-sm">{option}</span>
+                  </button>
+                ))}
+                <input type="hidden" name="timeWeekly" value={formData.timeWeekly} />
+              </div>
               {errors.timeWeekly && (
                 <p className="mt-1 text-sm text-red-400">{errors.timeWeekly}</p>
               )}
