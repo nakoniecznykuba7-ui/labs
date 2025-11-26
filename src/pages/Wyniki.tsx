@@ -119,7 +119,7 @@ const caseStudies: CaseStudy[] = [
       'Retargeting + email'
     ],
     timeframe: '10 dni',
-    result: '4 100 zł przychodu, 1 200 zł zysku',
+    result: '4 100 zł przychodu, 2750 zł zysku',
     verificationNote: 'Shopify + Meta Ads (ROAS 2.1)',
     fullActions: [
       'Zmiana modelu: od losowych produktów do research-driven selection',
@@ -129,7 +129,7 @@ const caseStudies: CaseStudy[] = [
     steps: [
       'Analiza failed campaigns: dlaczego nie działały',
       'Research: winning products z ostatnich 30 dni (narzędzia spy)',
-      'Test 3 produktów po 300 zł budżetu',
+      'Test 3 produktów po 150 zł budżetu',
       'Wygrał: gadżet lifestyle, CPA 38 zł, AOV 120 zł',
       'Skalowanie: 1 500 zł → 3 000 zł/dzień',
       'Email flow: abandoned cart + upsell (conversion +9%)'
