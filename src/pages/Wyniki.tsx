@@ -20,7 +20,6 @@ interface CaseStudy {
   verificationNote: string;
   fullActions: string[];
   steps: string[];
-  bgGradient: string;
 }
 
 const caseStudies: CaseStudy[] = [
@@ -29,7 +28,6 @@ const caseStudies: CaseStudy[] = [
     program: 'ecomlab',
     programLabel: 'EcomLab',
     title: 'Sklep 0→5k w miesiąc',
-    bgGradient: 'linear-gradient(to bottom right, rgba(6, 182, 212, 0.05), rgba(59, 130, 246, 0.05))',
     start: 'Pomysł na produkt, zero sprzedaży',
     quickActions: [
       'MVP sklepu w 24h',
@@ -58,7 +56,6 @@ const caseStudies: CaseStudy[] = [
     program: 'ai-skill-lab',
     programLabel: 'AI Skill Lab',
     title: 'Freelance AI → 8k zlecenia',
-    bgGradient: 'linear-gradient(to bottom right, rgba(168, 85, 247, 0.05), rgba(236, 72, 153, 0.05))',
     start: 'IT bez oferty AI, brak klientów',
     quickActions: [
       'Portfolio: 3 case studies',
@@ -87,7 +84,6 @@ const caseStudies: CaseStudy[] = [
     program: 'service-growth-lab',
     programLabel: 'Service Growth Lab',
     title: 'Agencja design 3k→12k MRR',
-    bgGradient: 'linear-gradient(to bottom right, rgba(59, 130, 246, 0.05), rgba(99, 102, 241, 0.05))',
     start: '3000 zł/msc, brak systemu',
     quickActions: [
       'Pakiety subskrypcyjne',
@@ -116,7 +112,6 @@ const caseStudies: CaseStudy[] = [
     program: 'ecomlab',
     programLabel: 'EcomLab',
     title: 'Dropshipping → zysk w 10 dni',
-    bgGradient: 'linear-gradient(to bottom right, rgba(6, 182, 212, 0.05), rgba(59, 130, 246, 0.05))',
     start: 'Strata bez naszej pomocy 500 zł w kampaniach',
     quickActions: [
       'Research-driven selection',
@@ -145,7 +140,6 @@ const caseStudies: CaseStudy[] = [
     program: 'ai-skill-lab',
     programLabel: 'AI Skill Lab',
     title: 'SaaS micro-niche → płacący',
-    bgGradient: 'linear-gradient(to bottom right, rgba(168, 85, 247, 0.05), rgba(236, 72, 153, 0.05))',
     start: 'Pomysł na AI tool, brak MVP',
     quickActions: [
       'MVP w 7 dni (no-code + API)',
@@ -174,7 +168,6 @@ const caseStudies: CaseStudy[] = [
     program: 'service-growth-lab',
     programLabel: 'Service Growth Lab',
     title: 'Konsulting → podwojenie stawek',
-    bgGradient: 'linear-gradient(to bottom right, rgba(59, 130, 246, 0.05), rgba(99, 102, 241, 0.05))',
     start: '150 zł/h, niestabilne zlecenia',
     quickActions: [
       'Od godzin do pakietów',
@@ -698,7 +691,7 @@ export default function Wyniki() {
         </div>
       </Section>
 
-      <Modal isOpen={selectedCase !== null} onClose={() => setSelectedCase(null)} bgGradient={selectedCase?.bgGradient}>
+      <Modal isOpen={selectedCase !== null} onClose={() => setSelectedCase(null)}>
         {selectedCase && (
           <div className="relative">
             <div className="mb-6 pt-4">
