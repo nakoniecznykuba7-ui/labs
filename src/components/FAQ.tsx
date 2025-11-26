@@ -66,6 +66,11 @@ export default function FAQ() {
       answer:
         'Tak – dajemy gwarancję działania do efektu, a nie gwarancję konkretnych kwot. Jeśli wykonasz zadania z planu i będziesz działać zgodnie ze wskazówkami, a mimo to nie zobaczysz żadnych efektów (brak pierwszych klientów / zamówień / realnego progresu), to pracujemy z Tobą dalej za darmo, aż ten efekt się pojawi. W praktyce: Ty działasz i wdrażasz zadania, my odpowiadamy za plan, kierunek i poprawki. Finalnie nie możesz „przegrać" – albo masz efekt szybko, albo masz dłuższe wsparcie za tę samą cenę.',
     },
+    {
+      question: 'Czy mogę zacząć, jeśli jestem młody? Czy jest jakiś limit wieku?',
+      answer:
+        'Nie ma żadnego limitu wieku. Możesz zacząć niezależnie od tego, czy masz 15, 18 czy 30 lat. Liczy się gotowość do działania, nie liczba w dowodzie. Jeśli jesteś w stanie wdrażać kroki i brać odpowiedzialność za wykonanie - możesz dołączyć i osiągać efekty.',
+    },
   ];
 
   return (
