@@ -1,16 +1,19 @@
 import { useNavigate } from 'react-router-dom';
 import { CheckCircle, Mail, ArrowLeft } from 'lucide-react';
-import { usePageTitle } from '../hooks/usePageTitle';
+import SEO from '../components/SEO';
 import Button from '../components/ui/Button';
 
 export default function Zakup() {
-  usePageTitle('Dziękujemy za zakup – EarningLab');
-
   const navigate = useNavigate();
 
   return (
     <>
-
+      <SEO
+        title="Dziękujemy za zakup — EarningLab"
+        description="Instrukcje po zakupie i następne kroki."
+        path="/zakup"
+        robots="noindex, nofollow, noarchive"
+      />
       <section className="pt-28 md:pt-36 pb-16 md:pb-20 px-6">
         <div className="max-w-3xl mx-auto">
           <div className="text-center space-y-6">

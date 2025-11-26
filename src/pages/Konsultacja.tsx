@@ -1,13 +1,12 @@
 import { useState, FormEvent } from 'react';
 import { Target, CheckCircle, AlertCircle, Send, ThumbsUp, ThumbsDown } from 'lucide-react';
-import { usePageTitle } from '../hooks/usePageTitle';
+import SEO from '../components/SEO';
 import Badge from '../components/ui/Badge';
 import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
 import Section from '../components/ui/Section';
 
 export default function Konsultacja() {
-  usePageTitle('Umów konsultację – EarningLab');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -185,6 +184,11 @@ Skąd się dowiedział: ${formData.source || 'Nie podano'}
 
   return (
     <>
+      <SEO
+        title="Konsultacja wstępna — EarningLab (dopasowanie ścieżki)"
+        description="Szybko sprawdzimy, czy EarningLab ma sens w Twojej sytuacji. Jeśli nie — powiemy wprost. Dostaniesz rekomendację i plan startu."
+        path="/konsultacja"
+      />
       <section className="pt-20 md:pt-24 pb-12 md:pb-16 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center space-y-4">

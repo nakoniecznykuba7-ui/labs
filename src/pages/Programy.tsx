@@ -1,15 +1,38 @@
 import { Link } from 'react-router-dom';
 import { ShoppingCart, Sparkles, Briefcase, Check, Clock, Coins, AlertCircle, Target } from 'lucide-react';
-import { usePageTitle } from '../hooks/usePageTitle';
+import SEO from '../components/SEO';
 import Badge from '../components/ui/Badge';
 import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
 import Section from '../components/ui/Section';
 
 export default function Programy() {
-  usePageTitle('Programy EarningLab');
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://earninglab.pl',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Programy',
+        item: 'https://earninglab.pl/programy',
+      },
+    ],
+  };
   return (
     <>
+      <SEO
+        title="Programy EarningLab — EcomLab, AI Skill Lab, Service Growth Lab"
+        description="3 programy pod różne cele: e-commerce, usługi z AI, skalowanie usług. Dostajesz plan, zadania i feedback 1:1 — bez teorii."
+        path="/programy"
+        jsonLd={breadcrumbSchema}
+      />
       <section className="pt-20 md:pt-24 pb-12 md:pb-16 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center space-y-4">

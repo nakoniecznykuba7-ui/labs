@@ -1,11 +1,10 @@
 import { useState, FormEvent } from 'react';
 import { Mail, Send, CheckCircle, AlertCircle } from 'lucide-react';
-import { usePageTitle } from '../hooks/usePageTitle';
+import SEO from '../components/SEO';
 import Section from '../components/ui/Section';
 import Button from '../components/ui/Button';
 
 export default function Kontakt() {
-  usePageTitle('Kontakt – EarningLab');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -120,6 +119,11 @@ export default function Kontakt() {
 
   return (
     <>
+      <SEO
+        title="Kontakt — EarningLab"
+        description="Masz pytanie? Napisz do EarningLab. Odpowiadamy szybko — mail lub formularz."
+        path="/kontakt"
+      />
       <section className="pt-28 md:pt-36 pb-8 md:pb-10 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center space-y-4">

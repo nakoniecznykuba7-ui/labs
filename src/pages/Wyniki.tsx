@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { TrendingUp, Target, Zap, ChevronDown, ChevronUp } from 'lucide-react';
-import { usePageTitle } from '../hooks/usePageTitle';
+import SEO from '../components/SEO';
 import Badge from '../components/ui/Badge';
 import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
@@ -228,7 +228,24 @@ type FilterType = 'all' | 'ecomlab' | 'ai-skill-lab' | 'service-growth-lab';
 type ScaleTab = 'oferta' | 'dystrybucja' | 'system';
 
 export default function Wyniki() {
-  usePageTitle('Wyniki klientów | EarningLab');
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://earninglab.pl',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Wyniki',
+        item: 'https://earninglab.pl/wyniki',
+      },
+    ],
+  };
 
   const [filter, setFilter] = useState<FilterType>('all');
   const [selectedCase, setSelectedCase] = useState<CaseStudy | null>(null);
@@ -293,6 +310,12 @@ export default function Wyniki() {
 
   return (
     <>
+      <SEO
+        title="Wyniki i Case Studies — EarningLab (kroki + liczby + weryfikacja)"
+        description="Przykłady wyników z realnych projektów: co zrobiliśmy, w jakim czasie i jaki był efekt. Zobacz proces krok po kroku."
+        path="/wyniki"
+        jsonLd={breadcrumbSchema}
+      />
       <section className="pt-20 md:pt-24 pb-12 md:pb-16 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center space-y-4">
