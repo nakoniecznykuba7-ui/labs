@@ -13,12 +13,12 @@ export default function ForWhom() {
         <div className="grid md:grid-cols-3 gap-6 mb-8">
           <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 p-6 hover:border-cyan-500/30 transition-all">
             <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center mb-4">
-              <GraduationCap className="w-7 h-7 text-white" />
+              <GraduationCap className="w-7 h-7 text-white" aria-hidden="true" />
             </div>
 
             <h3 className="text-xl font-bold mb-4">Uczniowie i studenci</h3>
 
-            <ul className="space-y-3 text-gray-300">
+            <ul className="space-y-3 text-gray-200">
               <li className="flex items-start gap-3">
                 <span className="text-cyan-400 mt-1">•</span>
                 <span>Masz mało czasu, ale chcesz zacząć dorabiać</span>
@@ -36,12 +36,12 @@ export default function ForWhom() {
 
           <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 p-8 hover:border-purple-500/30 transition-all">
             <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center mb-6">
-              <Briefcase className="w-7 h-7 text-white" />
+              <Briefcase className="w-7 h-7 text-white" aria-hidden="true" />
             </div>
 
             <h3 className="text-xl font-bold mb-4">Osoby pracujące</h3>
 
-            <ul className="space-y-3 text-gray-300">
+            <ul className="space-y-3 text-gray-200">
               <li className="flex items-start gap-3">
                 <span className="text-purple-400 mt-1">•</span>
                 <span>Chcesz drugiej nogi finansowej, nie zależeć od etatu</span>
@@ -59,12 +59,12 @@ export default function ForWhom() {
 
           <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 p-8 hover:border-blue-500/30 transition-all">
             <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center mb-6">
-              <TrendingUp className="w-7 h-7 text-white" />
+              <TrendingUp className="w-7 h-7 text-white" aria-hidden="true" />
             </div>
 
             <h3 className="text-xl font-bold mb-4">Freelancerzy / właściciele usług</h3>
 
-            <ul className="space-y-3 text-gray-300">
+            <ul className="space-y-3 text-gray-200">
               <li className="flex items-start gap-3">
                 <span className="text-blue-400 mt-1">•</span>
                 <span>Chcesz podnieść stawki i przestać robić wszystko za grosze</span>

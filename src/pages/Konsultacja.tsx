@@ -200,7 +200,7 @@ Skąd się dowiedział: ${formData.source || 'Nie podano'}
               Umów konsultację wstępną z EarningLab
             </h1>
 
-            <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-200 max-w-3xl mx-auto">
               W 15 minut sprawdzimy, czy któryś z programów EarningLab ma sens dla Twojej
               sytuacji. Bez wciskania, bez zobowiązań – jeśli nie widzimy szans, mówimy to wprost.
             </p>
@@ -246,7 +246,7 @@ Skąd się dowiedział: ${formData.source || 'Nie podano'}
       <Section id="jak-wyglada" hasBorder>
         <div className="text-center mb-10">
           <h2 className="text-4xl lg:text-5xl font-bold mb-3">Jak wygląda konsultacja?</h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-200 max-w-2xl mx-auto">
             Chcemy, żebyś dokładnie wiedział, na co się zapisujesz. Bez niespodzianek.
           </p>
         </div>
@@ -388,7 +388,7 @@ Skąd się dowiedział: ${formData.source || 'Nie podano'}
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-8">
             <h2 className="text-4xl lg:text-5xl font-bold mb-3">Formularz konsultacji</h2>
-            <p className="text-lg text-gray-300">
+            <p className="text-lg text-gray-200">
               Im dokładniej opiszesz sytuację, tym lepiej przygotujemy się do rozmowy i tym
               większa szansa, że konsultacja faktycznie coś Ci da.
             </p>
@@ -398,7 +398,7 @@ Skąd się dowiedział: ${formData.source || 'Nie podano'}
             <input type="hidden" name="botcheck" />
 
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+              <label htmlFor="name" className="block text-sm font-medium text-gray-200 mb-2">
                 Imię <span className="text-red-400">*</span>
               </label>
               <input
@@ -416,7 +416,7 @@ Skąd się dowiedział: ${formData.source || 'Nie podano'}
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+              <label htmlFor="email" className="block text-sm font-medium text-gray-200 mb-2">
                 E-mail <span className="text-red-400">*</span>
               </label>
               <input
@@ -434,7 +434,7 @@ Skąd się dowiedział: ${formData.source || 'Nie podano'}
             </div>
 
             <div>
-              <label htmlFor="currentStage" className="block text-sm font-medium text-gray-300 mb-2">
+              <label htmlFor="currentStage" className="block text-sm font-medium text-gray-200 mb-2">
                 Gdzie jesteś teraz? <span className="text-red-400">*</span>
               </label>
               <select
@@ -463,7 +463,7 @@ Skąd się dowiedział: ${formData.source || 'Nie podano'}
             </div>
 
             <div>
-              <label htmlFor="program" className="block text-sm font-medium text-gray-300 mb-2">
+              <label htmlFor="program" className="block text-sm font-medium text-gray-200 mb-2">
                 Który program najbardziej Cię interesuje? <span className="text-red-400">*</span>
               </label>
               <select
@@ -491,7 +491,7 @@ Skąd się dowiedział: ${formData.source || 'Nie podano'}
             </div>
 
             <div>
-              <label htmlFor="budget" className="block text-sm font-medium text-gray-300 mb-2">
+              <label htmlFor="budget" className="block text-sm font-medium text-gray-200 mb-2">
                 Budżet na start <span className="text-red-400">*</span>
               </label>
               <select
@@ -513,7 +513,7 @@ Skąd się dowiedział: ${formData.source || 'Nie podano'}
             </div>
 
             <div>
-              <label htmlFor="timeWeekly" className="block text-sm font-medium text-gray-300 mb-2">
+              <label htmlFor="timeWeekly" className="block text-sm font-medium text-gray-200 mb-2">
                 Ile realnie czasu tygodniowo możesz poświęcić?{' '}
                 <span className="text-red-400">*</span>
               </label>
@@ -538,7 +538,7 @@ Skąd się dowiedział: ${formData.source || 'Nie podano'}
             </div>
 
             <div>
-              <label htmlFor="situation" className="block text-sm font-medium text-gray-300 mb-2">
+              <label htmlFor="situation" className="block text-sm font-medium text-gray-200 mb-2">
                 Opisz krótko swoją sytuację i cel na najbliższe 3 miesiące{' '}
                 <span className="text-red-400">*</span>
               </label>
@@ -559,7 +559,7 @@ Skąd się dowiedział: ${formData.source || 'Nie podano'}
             </div>
 
             <div>
-              <label htmlFor="source" className="block text-sm font-medium text-gray-300 mb-2">
+              <label htmlFor="source" className="block text-sm font-medium text-gray-200 mb-2">
                 Skąd się o nas dowiedziałeś? (opcjonalne)
               </label>
               <input
@@ -582,7 +582,7 @@ Skąd się dowiedział: ${formData.source || 'Nie podano'}
                   onChange={handleChange}
                   className="mt-1 w-5 h-5 rounded border-white/10 bg-white/5 text-cyan-500 focus:ring-2 focus:ring-cyan-500/20"
                 />
-                <span className="text-sm text-gray-300">
+                <span className="text-sm text-gray-200">
                   Rozumiem, że konsultacja nie jest obietnicą konkretnych zarobków, tylko wspólnym
                   sprawdzeniem, czy współpraca ma sens. <span className="text-red-400">*</span>
                 </span>

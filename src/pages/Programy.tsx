@@ -47,7 +47,7 @@ export default function Programy() {
               </span>
             </h1>
 
-            <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-200 max-w-3xl mx-auto">
               3 ścieżki: <strong>E-commerce</strong>, <strong>AI Skill</strong>, <strong>Service</strong>.
               Dostajesz plan + zadania + feedback 1:1. Zero teorii – same działania prowadzące do wyniku.
             </p>
@@ -58,7 +58,7 @@ export default function Programy() {
       <Section id="programy-list" hasBorder>
         <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold mb-3">W każdym programie dostajesz</h2>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-8">
+          <p className="text-lg text-gray-200 max-w-3xl mx-auto mb-8">
             Bazowy pakiet wartości – bez względu na to, którą ścieżkę wybierzesz.
           </p>
 
@@ -66,42 +66,42 @@ export default function Programy() {
             <Card variant="default" className="text-left">
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <Check className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} aria-hidden="true" />
                   <div>
                     <span className="text-gray-200 font-semibold">Start w 15 minut:</span>
                     <span className="text-gray-400 text-sm block">onboarding + ustawienie pierwszych kroków</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <Check className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} aria-hidden="true" />
                   <div>
                     <span className="text-gray-200 font-semibold">Plan działania krok po kroku</span>
                     <span className="text-gray-400 text-sm block">(bez teorii – same zadania)</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <Check className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} aria-hidden="true" />
                   <div>
                     <span className="text-gray-200 font-semibold">Checklisty + gotowe szablony</span>
                     <span className="text-gray-400 text-sm block">(żeby nie wymyślać od zera)</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <Check className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} aria-hidden="true" />
                   <div>
                     <span className="text-gray-200 font-semibold">Feedback do Twoich działań</span>
                     <span className="text-gray-400 text-sm block">(nie "motywacja", tylko korekty)</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <Check className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} aria-hidden="true" />
                   <div>
                     <span className="text-gray-200 font-semibold">Prosty system dowozu</span>
                     <span className="text-gray-400 text-sm block">(wiesz co robić dziś / jutro)</span>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
-                  <Check className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
+                  <Check className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} aria-hidden="true" />
                   <div>
                     <span className="text-gray-200 font-semibold">Jasny cel:</span>
                     <span className="text-gray-400 text-sm block">pierwsze efekty jak najszybciej, bez chaosu</span>
@@ -114,7 +114,7 @@ export default function Programy() {
 
         <div className="text-center mb-10 mt-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-3">Wybierz program</h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-200 max-w-2xl mx-auto">
             Każdy program prowadzi do konkretnego wyniku.
           </p>
         </div>
@@ -139,36 +139,36 @@ export default function Programy() {
               <div className="text-sm font-semibold text-cyan-400 mb-3">Co dostajesz w środku:</div>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start gap-2">
-                  <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="text-gray-300">Wybór kierunku: produkt / nisza / model (prosty filtr decyzyjny)</span>
+                  <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} aria-hidden="true" />
+                  <span className="text-gray-200">Wybór kierunku: produkt / nisza / model (prosty filtr decyzyjny)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="text-gray-300">Szkielet oferty, która się broni (co, dla kogo, dlaczego kupią)</span>
+                  <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} aria-hidden="true" />
+                  <span className="text-gray-200">Szkielet oferty, która się broni (co, dla kogo, dlaczego kupią)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="text-gray-300">Gotowy plan startu sklepu (minimum bez dłubania tygodniami)</span>
+                  <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} aria-hidden="true" />
+                  <span className="text-gray-200">Gotowy plan startu sklepu (minimum bez dłubania tygodniami)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="text-gray-300">Checklista: produkt + marża + dostawca + ryzyko</span>
+                  <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} aria-hidden="true" />
+                  <span className="text-gray-200">Checklista: produkt + marża + dostawca + ryzyko</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="text-gray-300">Prosty lejek: ruch → oferta → pierwsze zamówienie</span>
+                  <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} aria-hidden="true" />
+                  <span className="text-gray-200">Prosty lejek: ruch → oferta → pierwsze zamówienie</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="text-gray-300">48h sprint: "co robić, żeby ruszyć, a nie planować"</span>
+                  <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} aria-hidden="true" />
+                  <span className="text-gray-200">48h sprint: "co robić, żeby ruszyć, a nie planować"</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="text-gray-300">Minimalny system obsługi zamówień (żeby nie utknąć w operacji)</span>
+                  <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} aria-hidden="true" />
+                  <span className="text-gray-200">Minimalny system obsługi zamówień (żeby nie utknąć w operacji)</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="text-gray-300">Najczęstsze błędy + jak ich uniknąć (żeby nie palić budżetu)</span>
+                  <Check className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} aria-hidden="true" />
+                  <span className="text-gray-200">Najczęstsze błędy + jak ich uniknąć (żeby nie palić budżetu)</span>
                 </li>
               </ul>
             </div>
@@ -203,35 +203,35 @@ export default function Programy() {
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="text-gray-300">Wybór skillu, który realnie kupują ludzie (bez zgadywania)</span>
+                  <span className="text-gray-200">Wybór skillu, który realnie kupują ludzie (bez zgadywania)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="text-gray-300">"Oferta w 1 dzień" – prosta usługa + opis + zakres</span>
+                  <span className="text-gray-200">"Oferta w 1 dzień" – prosta usługa + opis + zakres</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="text-gray-300">Portfolio starter: 2–3 przykładowe realizacje (nawet jeśli startujesz od zera)</span>
+                  <span className="text-gray-200">Portfolio starter: 2–3 przykładowe realizacje (nawet jeśli startujesz od zera)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="text-gray-300">Workflow z AI: jak robić szybciej (prompty + proces, nie hype)</span>
+                  <span className="text-gray-200">Workflow z AI: jak robić szybciej (prompty + proces, nie hype)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="text-gray-300">Checklista: jak wycenić i nie oddać się za grosze</span>
+                  <span className="text-gray-200">Checklista: jak wycenić i nie oddać się za grosze</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="text-gray-300">Jak pisać wiadomości/DM, które dostają odpowiedź (bez spiny)</span>
+                  <span className="text-gray-200">Jak pisać wiadomości/DM, które dostają odpowiedź (bez spiny)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="text-gray-300">System dowozu: jak oddawać pracę i brać polecenia</span>
+                  <span className="text-gray-200">System dowozu: jak oddawać pracę i brać polecenia</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-purple-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="text-gray-300">Plan na pierwszych klientów (prosto, bez "marki osobistej")</span>
+                  <span className="text-gray-200">Plan na pierwszych klientów (prosto, bez "marki osobistej")</span>
                 </li>
               </ul>
             </div>
@@ -266,35 +266,35 @@ export default function Programy() {
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="text-gray-300">Uporządkowanie oferty: co sprzedajesz i komu (bez chaosu)</span>
+                  <span className="text-gray-200">Uporządkowanie oferty: co sprzedajesz i komu (bez chaosu)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="text-gray-300">Cennik + pakiety: jak podnieść stawki i nadal domykać</span>
+                  <span className="text-gray-200">Cennik + pakiety: jak podnieść stawki i nadal domykać</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="text-gray-300">Prosty system pozyskiwania: DM / ogłoszenia / polecenia (bez reklam)</span>
+                  <span className="text-gray-200">Prosty system pozyskiwania: DM / ogłoszenia / polecenia (bez reklam)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="text-gray-300">Skrypt rozmowy z klientem (żeby nie było "yyy… zależy")</span>
+                  <span className="text-gray-200">Skrypt rozmowy z klientem (żeby nie było "yyy… zależy")</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="text-gray-300">System obsługi klienta: brief → realizacja → odbiór → upsell</span>
+                  <span className="text-gray-200">System obsługi klienta: brief → realizacja → odbiór → upsell</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="text-gray-300">Checklista dowozu jakości (żeby nie robić poprawek w nieskończoność)</span>
+                  <span className="text-gray-200">Checklista dowozu jakości (żeby nie robić poprawek w nieskończoność)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="text-gray-300">Jak przestać tonąć w zadaniach i zacząć dowozić tygodniami</span>
+                  <span className="text-gray-200">Jak przestać tonąć w zadaniach i zacząć dowozić tygodniami</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
-                  <span className="text-gray-300">Plan: więcej klientów albo mniej klientów, ale droższych (wybór strategii)</span>
+                  <span className="text-gray-200">Plan: więcej klientów albo mniej klientów, ale droższych (wybór strategii)</span>
                 </li>
               </ul>
             </div>
@@ -314,7 +314,7 @@ export default function Programy() {
       <Section id="porownie" hasBorder>
         <div className="text-center mb-8">
           <h2 className="text-4xl lg:text-5xl font-bold mb-3">Które rozwiązanie jest dla Ciebie?</h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-200 max-w-2xl mx-auto">
             Szybkie porównanie, żeby łatwiej podjąć decyzję.
           </p>
         </div>
@@ -332,7 +332,7 @@ export default function Programy() {
                   <Target className="w-4 h-4 text-cyan-400" />
                   <span className="text-sm font-semibold text-gray-400">Dla kogo:</span>
                 </div>
-                <p className="text-sm text-gray-300">
+                <p className="text-sm text-gray-200">
                   Osoby, które chcą sprzedawać produkty (fizyczne lub cyfrowe) bez budowania własnego brandu od zera, lub nie mają dokładnego planu działania
                 </p>
               </div>
@@ -342,7 +342,7 @@ export default function Programy() {
                   <Clock className="w-4 h-4 text-cyan-400" />
                   <span className="text-sm font-semibold text-gray-400">Czas do 1. efektów:</span>
                 </div>
-                <p className="text-sm text-gray-300">2-7 Dni (pierwsze zamówienia)</p>
+                <p className="text-sm text-gray-200">2-7 Dni (pierwsze zamówienia)</p>
               </div>
 
               <div>
@@ -350,7 +350,7 @@ export default function Programy() {
                   <Coins className="w-4 h-4 text-cyan-400" />
                   <span className="text-sm font-semibold text-gray-400">Wymagane zasoby:</span>
                 </div>
-                <p className="text-sm text-gray-300">Minimalny budżet 100-300 zł na testy reklam</p>
+                <p className="text-sm text-gray-200">Minimalny budżet 100-300 zł na testy reklam</p>
               </div>
 
               <div>
@@ -358,12 +358,12 @@ export default function Programy() {
                   <AlertCircle className="w-4 h-4 text-cyan-400" />
                   <span className="text-sm font-semibold text-gray-400">Ryzyko:</span>
                 </div>
-                <p className="text-sm text-gray-300">Niskie-średnie (testy rynkowe)</p>
+                <p className="text-sm text-gray-200">Niskie-średnie (testy rynkowe)</p>
               </div>
 
               <div className="pt-2 border-t border-white/10">
                 <p className="text-sm font-semibold text-cyan-400 mb-1">Idealny start:</p>
-                <p className="text-sm text-gray-300">Masz pomysł na produkt lub niszę, chcesz szybko zweryfikować, czy się sprzeda, lub chcesz pomoc od zera</p>
+                <p className="text-sm text-gray-200">Masz pomysł na produkt lub niszę, chcesz szybko zweryfikować, czy się sprzeda, lub chcesz pomoc od zera</p>
               </div>
             </div>
           </Card>
@@ -380,7 +380,7 @@ export default function Programy() {
                   <Target className="w-4 h-4 text-purple-400" />
                   <span className="text-sm font-semibold text-gray-400">Dla kogo:</span>
                 </div>
-                <p className="text-sm text-gray-300">
+                <p className="text-sm text-gray-200">
                   Osoby, które chcą sprzedawać umiejętności (grafika, copywriting, social media) z pomocą AI
                 </p>
               </div>
@@ -390,7 +390,7 @@ export default function Programy() {
                   <Clock className="w-4 h-4 text-purple-400" />
                   <span className="text-sm font-semibold text-gray-400">Czas do 1. efektów:</span>
                 </div>
-                <p className="text-sm text-gray-300">1-5 Dni (pierwsze zlecenie)</p>
+                <p className="text-sm text-gray-200">1-5 Dni (pierwsze zlecenie)</p>
               </div>
 
               <div>
@@ -398,7 +398,7 @@ export default function Programy() {
                   <Coins className="w-4 h-4 text-purple-400" />
                   <span className="text-sm font-semibold text-gray-400">Wymagane zasoby:</span>
                 </div>
-                <p className="text-sm text-gray-300">Czas na naukę + ~50-100 zł na AI tools</p>
+                <p className="text-sm text-gray-200">Czas na naukę + ~50-100 zł na AI tools</p>
               </div>
 
               <div>
@@ -406,12 +406,12 @@ export default function Programy() {
                   <AlertCircle className="w-4 h-4 text-purple-400" />
                   <span className="text-sm font-semibold text-gray-400">Ryzyko:</span>
                 </div>
-                <p className="text-sm text-gray-300">Niskie (brak wymaganych dużych inwestycji)</p>
+                <p className="text-sm text-gray-200">Niskie (brak wymaganych dużych inwestycji)</p>
               </div>
 
               <div className="pt-2 border-t border-white/10">
                 <p className="text-sm font-semibold text-purple-400 mb-1">Idealny start:</p>
-                <p className="text-sm text-gray-300">Chcesz oferować usługi, ale potrzebujesz przewagi technologicznej</p>
+                <p className="text-sm text-gray-200">Chcesz oferować usługi, ale potrzebujesz przewagi technologicznej</p>
               </div>
             </div>
           </Card>
@@ -428,7 +428,7 @@ export default function Programy() {
                   <Target className="w-4 h-4 text-blue-400" />
                   <span className="text-sm font-semibold text-gray-400">Dla kogo:</span>
                 </div>
-                <p className="text-sm text-gray-300">
+                <p className="text-sm text-gray-200">
                   Freelancerzy lub mikro-agencje, którzy chcą więcej klientów i lepszą organizację
                 </p>
               </div>
@@ -438,7 +438,7 @@ export default function Programy() {
                   <Clock className="w-4 h-4 text-blue-400" />
                   <span className="text-sm font-semibold text-gray-400">Czas do 1. efektów:</span>
                 </div>
-                <p className="text-sm text-gray-300">5-10 Dni (nowy klient)</p>
+                <p className="text-sm text-gray-200">5-10 Dni (nowy klient)</p>
               </div>
 
               <div>
@@ -446,7 +446,7 @@ export default function Programy() {
                   <Coins className="w-4 h-4 text-blue-400" />
                   <span className="text-sm font-semibold text-gray-400">Wymagane zasoby:</span>
                 </div>
-                <p className="text-sm text-gray-300">Czas na reorganizację procesów</p>
+                <p className="text-sm text-gray-200">Czas na reorganizację procesów</p>
               </div>
 
               <div>
@@ -454,12 +454,12 @@ export default function Programy() {
                   <AlertCircle className="w-4 h-4 text-blue-400" />
                   <span className="text-sm font-semibold text-gray-400">Ryzyko:</span>
                 </div>
-                <p className="text-sm text-gray-300">Minimalne (bazujesz na tym co już masz)</p>
+                <p className="text-sm text-gray-200">Minimalne (bazujesz na tym co już masz)</p>
               </div>
 
               <div className="pt-2 border-t border-white/10">
                 <p className="text-sm font-semibold text-blue-400 mb-1">Idealny start:</p>
-                <p className="text-sm text-gray-300">Już coś robisz, ale chcesz więcej klientów i przestać tonąć w chaosie</p>
+                <p className="text-sm text-gray-200">Już coś robisz, ale chcesz więcej klientów i przestać tonąć w chaosie</p>
               </div>
             </div>
           </Card>
@@ -471,7 +471,7 @@ export default function Programy() {
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
             Nie wiesz co wybrać?
           </h2>
-          <p className="text-lg text-gray-300 mb-8">
+          <p className="text-lg text-gray-200 mb-8">
             Pomożemy Ci podjąć decyzję. W 15-minutowej diagnozie określimy, która ścieżka ma największy sens dla Twojej sytuacji.
           </p>
 
@@ -482,7 +482,7 @@ export default function Programy() {
                   <span className="text-2xl font-bold text-white">1</span>
                 </div>
                 <h3 className="text-lg font-bold mb-2">Diagnoza</h3>
-                <p className="text-sm text-gray-300">
+                <p className="text-sm text-gray-200">
                   Pytamy o cel, dostępny czas, zasoby i doświadczenie
                 </p>
               </div>
@@ -494,7 +494,7 @@ export default function Programy() {
                   <span className="text-2xl font-bold text-white">2</span>
                 </div>
                 <h3 className="text-lg font-bold mb-2">Dobór programu</h3>
-                <p className="text-sm text-gray-300">
+                <p className="text-sm text-gray-200">
                   Rekomendujemy program, który ma największą szansę na sukces
                 </p>
               </div>
@@ -506,7 +506,7 @@ export default function Programy() {
                   <span className="text-2xl font-bold text-white">3</span>
                 </div>
                 <h3 className="text-lg font-bold mb-2">Plan na 7 dni</h3>
-                <p className="text-sm text-gray-300">
+                <p className="text-sm text-gray-200">
                   Dostajesz konkretny pierwszy krok, żeby zacząć działać
                 </p>
               </div>

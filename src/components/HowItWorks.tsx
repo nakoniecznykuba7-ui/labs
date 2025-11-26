@@ -8,7 +8,7 @@ export default function HowItWorks() {
           <h2 className="text-4xl lg:text-5xl font-bold mb-3">
             Jak to działa w praktyce?
           </h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-200 max-w-2xl mx-auto">
             Nie ma tu kursu na 200 filmów. Dostajesz konkretny plan dopasowany do Ciebie i wsparcie 1:1
             w każdym kroku, żeby faktycznie dojść do wyniku.
           </p>
@@ -18,11 +18,11 @@ export default function HowItWorks() {
           <div className="relative">
             <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 p-6 hover:border-cyan-500/30 transition-all">
               <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center mb-4">
-                <Search className="w-7 h-7 text-white" />
+                <Search className="w-7 h-7 text-white" aria-hidden="true" />
               </div>
               <div className="text-cyan-400 text-sm font-semibold mb-2">Krok 1</div>
               <h3 className="text-xl font-bold mb-3">Diagnoza</h3>
-              <ul className="space-y-2 text-gray-300">
+              <ul className="space-y-2 text-gray-200">
                 <li className="flex items-start gap-2">
                   <span className="text-cyan-400 mt-1">•</span>
                   <span>Sprawdzamy Twój punkt startu i dostępny czas</span>
@@ -43,11 +43,11 @@ export default function HowItWorks() {
           <div className="relative">
             <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 p-6 hover:border-blue-500/30 transition-all">
               <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center mb-4">
-                <Map className="w-7 h-7 text-white" />
+                <Map className="w-7 h-7 text-white" aria-hidden="true" />
               </div>
               <div className="text-blue-400 text-sm font-semibold mb-2">Krok 2</div>
               <h3 className="text-xl font-bold mb-3">Plan działania</h3>
-              <ul className="space-y-2 text-gray-300">
+              <ul className="space-y-2 text-gray-200">
                 <li className="flex items-start gap-2">
                   <span className="text-blue-400 mt-1">•</span>
                   <span>Konkretne zadania na najbliższe 1–4 tygodnie</span>
@@ -68,11 +68,11 @@ export default function HowItWorks() {
           <div className="relative">
             <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 p-6 hover:border-purple-500/30 transition-all">
               <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center mb-4">
-                <Rocket className="w-7 h-7 text-white" />
+                <Rocket className="w-7 h-7 text-white" aria-hidden="true" />
               </div>
               <div className="text-purple-400 text-sm font-semibold mb-2">Krok 3</div>
               <h3 className="text-xl font-bold mb-3">Wdrożenie i feedback</h3>
-              <ul className="space-y-2 text-gray-300">
+              <ul className="space-y-2 text-gray-200">
                 <li className="flex items-start gap-2">
                   <span className="text-purple-400 mt-1">•</span>
                   <span>Działasz i wysyłasz wyniki do sprawdzenia</span>

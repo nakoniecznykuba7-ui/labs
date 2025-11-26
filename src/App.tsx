@@ -28,14 +28,16 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0a0e1a] via-[#0d1228] to-[#0a0e1a] text-white">
       <Navigation />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/programy" element={<Programy />} />
-        <Route path="/wyniki" element={<Wyniki />} />
-        <Route path="/kontakt" element={<Kontakt />} />
-        <Route path="/zakup" element={<Zakup />} />
-        <Route path="/konsultacja" element={<Konsultacja />} />
-      </Routes>
+      <main role="main">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/programy" element={<Programy />} />
+          <Route path="/wyniki" element={<Wyniki />} />
+          <Route path="/kontakt" element={<Kontakt />} />
+          <Route path="/zakup" element={<Zakup />} />
+          <Route path="/konsultacja" element={<Konsultacja />} />
+        </Routes>
+      </main>
       <Footer />
     </div>
   );

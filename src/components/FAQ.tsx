@@ -14,12 +14,14 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
       <button
         onClick={onToggle}
         className="w-full px-6 py-5 flex items-center justify-between text-left"
+        aria-expanded={isOpen}
       >
         <span className="font-semibold text-lg pr-4">{question}</span>
         <ChevronDown
           className={`w-5 h-5 text-cyan-400 flex-shrink-0 transition-transform ${
             isOpen ? 'rotate-180' : ''
           }`}
+          aria-hidden="true"
         />
       </button>
       <div
@@ -27,7 +29,7 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
           isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="px-6 pb-5 text-gray-300 leading-relaxed">
+        <div className="px-6 pb-5 text-gray-200 leading-relaxed">
           {answer}
         </div>
       </div>

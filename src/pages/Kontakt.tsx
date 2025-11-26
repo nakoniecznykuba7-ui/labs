@@ -131,7 +131,7 @@ export default function Kontakt() {
               Napisz do nas
             </h1>
 
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-200 max-w-2xl mx-auto">
               Masz pytanie o programy, współpracę albo chcesz sprawdzić, czy możemy Ci pomóc?
               Napisz – odpowiemy możliwie szybko.
             </p>
@@ -151,12 +151,12 @@ export default function Kontakt() {
 
       <section className="py-6 md:py-8 px-6">
         <div className="max-w-xl mx-auto">
-          <p className="text-center text-gray-300 mb-8">
+          <p className="text-center text-gray-200 mb-8">
             Jeśli wolisz szybszy kontakt niż mail – wypełnij formularz poniżej.
           </p>
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+              <label htmlFor="name" className="block text-sm font-medium text-gray-200 mb-2">
                 Imię
               </label>
               <input
@@ -176,7 +176,7 @@ export default function Kontakt() {
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+              <label htmlFor="email" className="block text-sm font-medium text-gray-200 mb-2">
                 Email
               </label>
               <input
@@ -196,7 +196,7 @@ export default function Kontakt() {
             </div>
 
             <div>
-              <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
+              <label htmlFor="subject" className="block text-sm font-medium text-gray-200 mb-2">
                 Temat
               </label>
               <input
@@ -216,7 +216,7 @@ export default function Kontakt() {
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+              <label htmlFor="message" className="block text-sm font-medium text-gray-200 mb-2">
                 Wiadomość
               </label>
               <textarea

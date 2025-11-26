@@ -27,7 +27,7 @@ export default function Zakup() {
               Dziękujemy za zakup w EarningLab
             </h1>
 
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-200 max-w-2xl mx-auto">
               Twoja płatność została przyjęta. W ciągu kilku minut wyślemy na Twój e-mail szczegółowe instrukcje, jak wystartować z programem.
             </p>
 

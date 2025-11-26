@@ -330,7 +330,7 @@ export default function Wyniki() {
               </span>
             </h1>
 
-            <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-200 max-w-3xl mx-auto">
               Case studies + konkretne metryki. Bez magii, bez teorii – proces, decyzje i efekty.
             </p>
 
@@ -355,21 +355,21 @@ export default function Wyniki() {
           <Card variant="cyan">
             <div className="text-center">
               <div className="text-3xl font-bold mb-2">1–5 dni*</div>
-              <div className="text-gray-300">Czas do 1. efektu</div>
+              <div className="text-gray-200">Czas do 1. efektu</div>
             </div>
           </Card>
 
           <Card variant="purple">
             <div className="text-center">
               <div className="text-3xl font-bold mb-2">0→1 Dni</div>
-              <div className="text-gray-300">Najczęstszy start</div>
+              <div className="text-gray-200">Najczęstszy start</div>
             </div>
           </Card>
 
           <Card variant="default">
             <div className="text-center">
               <div className="text-3xl font-bold mb-2">Plan + 1:1</div>
-              <div className="text-gray-300 text-sm">Model pracy</div>
+              <div className="text-gray-200 text-sm">Model pracy</div>
             </div>
           </Card>
         </div>
@@ -382,7 +382,7 @@ export default function Wyniki() {
       <Section id="case-studies" hasBorder>
         <div className="text-center mb-8">
           <h2 className="text-4xl lg:text-5xl font-bold mb-3">Przykłady wyników</h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-200 max-w-2xl mx-auto">
             Realne projekty i liczby. Kliknij "Zobacz proces", żeby zobaczyć kroki – bez ściemy i bez lania wody.
           </p>
           <p className="text-sm text-gray-400 mt-3 max-w-2xl mx-auto">
@@ -451,12 +451,12 @@ export default function Wyniki() {
               <div className="space-y-4 mb-6 flex-grow">
                 <div>
                   <div className="text-sm font-semibold text-cyan-400 mb-1">Start:</div>
-                  <p className="text-gray-300 text-sm">{caseStudy.start}</p>
+                  <p className="text-gray-200 text-sm">{caseStudy.start}</p>
                 </div>
 
                 <div>
                   <div className="text-sm font-semibold text-cyan-400 mb-1">Efekt w:</div>
-                  <p className="text-gray-300 text-sm">{caseStudy.timeframe}</p>
+                  <p className="text-gray-200 text-sm">{caseStudy.timeframe}</p>
                 </div>
 
                 <div>
@@ -471,7 +471,7 @@ export default function Wyniki() {
 
                 <div>
                   <div className="text-sm font-semibold text-cyan-400 mb-2">Co zrobiliśmy:</div>
-                  <ul className="text-gray-300 text-sm space-y-1">
+                  <ul className="text-gray-200 text-sm space-y-1">
                     {caseStudy.quickActions.map((action, idx) => (
                       <li key={idx} className="flex items-start gap-2">
                         <span className="text-cyan-400 mt-1">•</span>
@@ -498,7 +498,7 @@ export default function Wyniki() {
       <Section hasBorder>
         <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold mb-3">Co skaluje najbardziej</h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-200 max-w-2xl mx-auto">
             3 obszary, które decydują o wyniku. Każdy musi działać.
           </p>
         </div>
@@ -512,7 +512,7 @@ export default function Wyniki() {
               className={`px-6 py-3 font-semibold transition-all ${
                 activeTab === 'oferta'
                   ? 'text-cyan-400 border-b-2 border-cyan-400 shadow-[0_2px_8px_rgba(6,182,212,0.2)]'
-                  : 'text-gray-400 hover:text-gray-300'
+                  : 'text-gray-400 hover:text-gray-200'
               }`}
             >
               Oferta
@@ -524,7 +524,7 @@ export default function Wyniki() {
               className={`px-6 py-3 font-semibold transition-all ${
                 activeTab === 'dystrybucja'
                   ? 'text-purple-400 border-b-2 border-purple-400 shadow-[0_2px_8px_rgba(168,85,247,0.2)]'
-                  : 'text-gray-400 hover:text-gray-300'
+                  : 'text-gray-400 hover:text-gray-200'
               }`}
             >
               Dystrybucja
@@ -536,7 +536,7 @@ export default function Wyniki() {
               className={`px-6 py-3 font-semibold transition-all ${
                 activeTab === 'system'
                   ? 'text-blue-400 border-b-2 border-blue-400 shadow-[0_2px_8px_rgba(59,130,246,0.2)]'
-                  : 'text-gray-400 hover:text-gray-300'
+                  : 'text-gray-400 hover:text-gray-200'
               }`}
             >
               System
@@ -551,7 +551,7 @@ export default function Wyniki() {
               <h3 className="text-2xl font-bold">{scaleContent[activeTab].title}</h3>
             </div>
 
-            <p className="text-gray-300 mb-6 leading-relaxed">
+            <p className="text-gray-200 mb-6 leading-relaxed">
               {scaleContent[activeTab].description}
             </p>
 
@@ -565,7 +565,7 @@ export default function Wyniki() {
                   }`}>
                     {idx + 1}
                   </span>
-                  <span className="text-gray-300 pt-0.5">{point}</span>
+                  <span className="text-gray-200 pt-0.5">{point}</span>
                 </li>
               ))}
             </ul>
@@ -583,7 +583,7 @@ export default function Wyniki() {
       <Section hasBorder>
         <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold mb-3">Jak to działa</h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-200 max-w-2xl mx-auto">
             Nie sprzedajemy marzeń — sprzedajemy egzekucję.
           </p>
         </div>
@@ -594,7 +594,7 @@ export default function Wyniki() {
               1
             </div>
             <h3 className="text-xl font-bold mb-2">Diagnoza sytuacji</h3>
-            <p className="text-gray-300 text-sm">
+            <p className="text-gray-200 text-sm">
               Cel / zasoby / ograniczenia. Ustalamy, co jest realne w Twoim przypadku.
             </p>
           </Card>
@@ -604,7 +604,7 @@ export default function Wyniki() {
               2
             </div>
             <h3 className="text-xl font-bold mb-2">Oferta i plan na 7 dni</h3>
-            <p className="text-gray-300 text-sm">
+            <p className="text-gray-200 text-sm">
               Co sprzedajesz, komu, za ile. Plus konkretne zadania na pierwszy tydzień.
             </p>
           </Card>
@@ -614,7 +614,7 @@ export default function Wyniki() {
               3
             </div>
             <h3 className="text-xl font-bold mb-2">Egzekucja</h3>
-            <p className="text-gray-300 text-sm">
+            <p className="text-gray-200 text-sm">
               Wykonujesz zadania. Dostajesz feedback 1:1 i poprawki w czasie rzeczywistym.
             </p>
           </Card>
@@ -624,7 +624,7 @@ export default function Wyniki() {
               4
             </div>
             <h3 className="text-xl font-bold mb-2">Iteracja</h3>
-            <p className="text-gray-300 text-sm">
+            <p className="text-gray-200 text-sm">
               Optymalizujemy to, co działa. Wycinamy to, co nie działa. Skalujemy wyniki.
             </p>
           </Card>
@@ -634,7 +634,7 @@ export default function Wyniki() {
       <Section hasBorder>
         <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold mb-3">FAQ</h2>
-          <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-200 max-w-2xl mx-auto">
             Najczęściej zadawane pytania o wyniki i proces.
           </p>
         </div>
@@ -659,7 +659,7 @@ export default function Wyniki() {
 
               {expandedFaq === `faq-${index}` && (
                 <div className="px-6 pb-6">
-                  <p className="text-gray-300 leading-relaxed">{item.answer}</p>
+                  <p className="text-gray-200 leading-relaxed">{item.answer}</p>
                 </div>
               )}
             </div>
@@ -672,7 +672,7 @@ export default function Wyniki() {
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
             Chcesz sprawdzić, czy to ma sens u Ciebie?
           </h2>
-          <p className="text-lg text-gray-300 mb-8">
+          <p className="text-lg text-gray-200 mb-8">
             Jeśli nie widzimy realnej ścieżki — powiemy wprost. Bez marnowania czasu.
           </p>
 
@@ -704,14 +704,14 @@ export default function Wyniki() {
             <div className="space-y-6">
               <div className="pb-6 border-b border-white/10">
                 <h3 className="text-lg font-semibold text-cyan-400 mb-2">Start</h3>
-                <p className="text-gray-300">{selectedCase.start}</p>
+                <p className="text-gray-200">{selectedCase.start}</p>
               </div>
 
               <div className="pb-6 border-b border-white/10">
                 <h3 className="text-lg font-semibold text-cyan-400 mb-2">Działania</h3>
                 <ul className="space-y-2">
                   {selectedCase.fullActions.map((action, idx) => (
-                    <li key={idx} className="flex items-start gap-2 text-gray-300">
+                    <li key={idx} className="flex items-start gap-2 text-gray-200">
                       <span className="text-cyan-400 mt-1">•</span>
                       <span>{action}</span>
                     </li>
@@ -723,7 +723,7 @@ export default function Wyniki() {
                 <h3 className="text-lg font-semibold text-cyan-400 mb-3">Krok po kroku</h3>
                 <ol className="space-y-3">
                   {selectedCase.steps.map((step, idx) => (
-                    <li key={idx} className="flex items-start gap-3 text-gray-300">
+                    <li key={idx} className="flex items-start gap-3 text-gray-200">
                       <span className="flex-shrink-0 w-7 h-7 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-sm font-bold">
                         {idx + 1}
                       </span>
@@ -736,7 +736,7 @@ export default function Wyniki() {
               <div className="pb-6 border-b border-white/10">
                 <h3 className="text-lg font-semibold text-cyan-400 mb-3">Efekt w / Wynik</h3>
                 <div className="bg-white/5 rounded-xl p-4 border border-white/10">
-                  <p className="text-gray-300 mb-2">
+                  <p className="text-gray-200 mb-2">
                     <span className="font-semibold">Timeframe:</span> {selectedCase.timeframe}
                   </p>
                   <p className="text-white font-semibold text-lg mb-4">{selectedCase.result}</p>

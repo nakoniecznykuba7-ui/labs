@@ -25,7 +25,7 @@ export default function Button({
       'bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 text-white',
     secondary:
       'bg-white/5 border border-white/10 hover:border-cyan-500/30 hover:bg-white/10 text-white',
-    ghost: 'text-gray-300 hover:text-white hover:bg-white/5',
+    ghost: 'text-gray-200 hover:text-white hover:bg-white/5',
   };
 
   const sizeClasses = {
@@ -41,7 +41,7 @@ export default function Button({
     >
       {children}
       {showArrow && (
-        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+        <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
       )}
     </button>
   );

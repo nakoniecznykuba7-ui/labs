@@ -18,8 +18,8 @@ export default function Badge({ children, variant = 'default', showPulse = false
     <div
       className={`inline-flex items-center gap-2 px-4 py-2 rounded-full border backdrop-blur-sm ${variantClasses[variant]}`}
     >
-      {showPulse && <div className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></div>}
-      <span className="text-sm text-gray-300">{children}</span>
+      {showPulse && <div className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" aria-hidden="true"></div>}
+      <span className="text-sm text-gray-200">{children}</span>
     </div>
   );
 }
