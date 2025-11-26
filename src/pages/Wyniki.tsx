@@ -1,4 +1,4 @@
-gimport { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { TrendingUp, Target, Zap, ChevronDown, ChevronUp } from 'lucide-react';
 import SEO from '../components/SEO';
