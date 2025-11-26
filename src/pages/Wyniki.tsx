@@ -44,7 +44,7 @@ const caseStudies: CaseStudy[] = [
     ],
     steps: [
       'Diagnoza: niszowy produkt z wysokim marginesem',
-      'Ustawienie sklepu + integracje płatności w 72h',
+      'Ustawienie sklepu + integracje płatności w 24h',
       'Kampanie testowe na 3 kreacje (100 zł każda)',
       'Skalowanie wygrywającej kreacji (CPA < 20 zł)',
       'Upsell w checkout (zwiększenie AOV o 18%)',
@@ -74,7 +74,7 @@ const caseStudies: CaseStudy[] = [
       'Pozycjonowanie: "AI automation dla e-commerce"',
       'Zbudowanie 3 demo projektów w 5 dni',
       'Cold outreach z personalizacją (response rate 11%)',
-      'Pakiet: 3 500 zł audyt + 4 900 zł prototyp (łącznie 8 400 zł)',
+      'Pakiet klienta: 3 500 zł audyt + 4 900 zł prototyp (łącznie 8 400 zł)',
       'Delivery w 10 dni roboczych',
       'Upsell: maintenance 1 200 zł/msc (nie wzięty w pierwszym zleceniu)'
     ]
@@ -112,7 +112,7 @@ const caseStudies: CaseStudy[] = [
     program: 'ecomlab',
     programLabel: 'EcomLab',
     title: 'Dropshipping → zysk w 10 dni',
-    start: 'Strata 2 000 zł w kampaniach',
+    start: 'Strata bez naszej pomocy 500 zł w kampaniach',
     quickActions: [
       'Research-driven selection',
       'Interest stacking + lookalike',
