@@ -274,18 +274,6 @@ export default function Wyniki() {
     }
   };
 
-  const getModalBackgroundClass = (program: string) => {
-    switch (program) {
-      case 'ecomlab':
-        return 'bg-gradient-to-br from-cyan-500/5 to-blue-500/5';
-      case 'ai-skill-lab':
-        return 'bg-gradient-to-br from-purple-500/5 to-pink-500/5';
-      case 'service-growth-lab':
-        return 'bg-gradient-to-br from-blue-500/5 to-indigo-500/5';
-      default:
-        return 'bg-gray-900/95';
-    }
-  };
 
   const scrollToCaseStudies = () => {
     document.getElementById('case-studies')?.scrollIntoView({ behavior: 'smooth' });
@@ -704,7 +692,7 @@ export default function Wyniki() {
         </div>
       </Section>
 
-      <Modal isOpen={selectedCase !== null} onClose={() => setSelectedCase(null)} backgroundClass={selectedCase ? getModalBackgroundClass(selectedCase.program) : undefined}>
+      <Modal isOpen={selectedCase !== null} onClose={() => setSelectedCase(null)}>
         {selectedCase && (
           <div className="relative">
             <div className="mb-6 pt-4">
