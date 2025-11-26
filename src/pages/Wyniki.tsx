@@ -200,7 +200,7 @@ const faqItems = [
   },
   {
     question: 'Co jeśli startuję od zera?',
-    answer: 'Większość case studies to start 0→1 lub optymalizacja czegoś, co nie działa. Nie musisz mieć produktu, klientów ani budżetu. Musisz mieć czas (min. 10h/tydzień) i gotowość do egzekucji. Resztę ustawiamy w planie.'
+    answer: 'Większość case studies to start 0→1 lub optymalizacja czegoś, co nie działa. Nie musisz mieć produktu, klientów ani budżetu. Musisz mieć czas (min. 5h/tydzień) i gotowość do egzekucji. Resztę ustawiamy w planie.'
   },
   {
     question: 'Ile czasu tygodniowo potrzeba?',
