@@ -701,7 +701,7 @@ export default function Wyniki() {
               <h2 className="text-3xl font-bold">{selectedCase.title}</h2>
             </div>
 
-            <div className="space-y-6 pb-[72px] md:pb-6">
+            <div className="space-y-6 pb-[60px] md:pb-6">
               <div className="pb-6 border-b border-white/10">
                 <h3 className="text-lg font-semibold text-cyan-400 mb-2">Start</h3>
                 <p className="text-gray-200">{selectedCase.start}</p>
