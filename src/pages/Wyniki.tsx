@@ -574,7 +574,7 @@ export default function Wyniki() {
               onClick={scrollToCaseStudies}
               className="text-cyan-400 hover:text-cyan-300 transition-colors text-sm font-medium inline-flex items-center gap-2"
             >
-              Zobacz przykłady w case studies ↓
+              Zobacz przykłady w case studies ⭡
             </button>
           </Card>
         </div>
@@ -584,7 +584,7 @@ export default function Wyniki() {
         <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold mb-3">Jak to działa</h2>
           <p className="text-lg text-gray-200 max-w-2xl mx-auto">
-            Nie sprzedajemy marzeń — sprzedajemy egzekucję.
+            Nie sprzedajemy marzeń - sprzedajemy działanie.
           </p>
         </div>
 
