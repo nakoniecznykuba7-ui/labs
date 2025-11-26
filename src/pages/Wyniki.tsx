@@ -676,7 +676,7 @@ export default function Wyniki() {
             Jeśli nie widzimy realnej ścieżki - powiemy wprost. Bez marnowania czasu.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link to="/konsultacja">
               <Button variant="primary" size="lg">
                 Umów konsultację
