@@ -575,7 +575,7 @@ export default function Wyniki() {
               onClick={scrollToCaseStudies}
               className="text-cyan-400 hover:text-cyan-300 transition-colors text-sm font-medium inline-flex items-center gap-2"
             >
-              Zobacz przykłady w case studies ⭡
+              Zobacz przykłady w case studies › 
             </button>
           </Card>
         </div>
