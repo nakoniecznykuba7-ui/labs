@@ -5,9 +5,10 @@ interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
   children: React.ReactNode;
+  backgroundClass?: string;
 }
 
-export default function Modal({ isOpen, onClose, children }: ModalProps) {
+export default function Modal({ isOpen, onClose, children, backgroundClass }: ModalProps) {
   const modalRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -42,7 +43,7 @@ export default function Modal({ isOpen, onClose, children }: ModalProps) {
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
       <div
         ref={modalRef}
-        className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto bg-gray-900/95 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl"
+        className={`relative w-full max-w-3xl max-h-[90vh] overflow-y-auto backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl ${backgroundClass || 'bg-gray-900/95'}`}
       >
         <div className="sticky top-0 z-10 flex justify-end p-4 bg-gradient-to-b from-gray-900/95 to-transparent pointer-events-none">
           <button
