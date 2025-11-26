@@ -208,15 +208,15 @@ const faqItems = [
   },
   {
     question: 'Czy potrzebuję budżetu na start?',
-    answer: 'Zależy od ścieżki. EcomLab: tak, min. 1500-3000 zł na testy kampanii. AI Skill Lab: nie, możesz startować z portfolio i cold outreach. Service Growth Lab: nie, ale dobrze mieć bufor na narzędzia (CRM, landing page).'
+    answer: 'Zależy od ścieżki. EcomLab: tak, min. 100-300 zł na testy kampanii. AI Skill Lab: nie, możesz startować z portfolio i cold outreach. Service Growth Lab: nie, ale dobrze mieć bufor na narzędzia (CRM, landing page).'
   },
   {
     question: 'Jak weryfikujecie case studies?',
-    answer: 'Każdy case ma notatkę "dowód": screeny z dashboardów (Shopify, Stripe, Meta Ads), faktury, umowy, LinkedIn recommendations. Nie publikujemy danych bez zgody klienta. Jeśli coś brzmi zbyt pięknie – pytaj o szczegóły.'
+    answer: 'Każdy case ma notatkę "dowód": screeny z dashboardów (Shopify, Stripe, Meta Ads), faktury, umowy, LinkedIn recommendations które otrzymaliśmy od naszych klientów. Nie publikujemy danych bez zgody klienta. Jeśli coś brzmi zbyt pięknie – pytaj o szczegóły.'
   },
   {
     question: 'Dlaczego niektóre case studies mają krótszy timeframe?',
-    answer: 'Bo skupiamy się na "czasie do pierwszego efektu", nie na pełnym ROI. 7-21 dni to realistyczny horyzont na pierwsze sygnały (sprzedaż, lead, kontrakt). Skalowanie i stabilizacja to kolejne fazy, które trwają dłużej.'
+    answer: 'Bo skupiamy się na "czasie do pierwszego efektu", nie na pełnym ROI. 5-10 dni to realistyczny horyzont na pierwsze sygnały (sprzedaż, lead, kontrakt). Skalowanie i stabilizacja to kolejne fazy, które trwają dłużej.'
   },
   {
     question: 'Co jeśli mój case nie będzie taki spektakularny?',
