@@ -318,7 +318,7 @@ Skąd się dowiedział: ${formData.source || 'Nie podano'}
               <li className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
                 <span className="text-gray-200">
-                  Chcesz realnie dowieźć pierwsze wyniki w ciągu kilku tygodni, nie „kiedyś".
+                  Chcesz realnie dowieźć pierwsze wyniki w ciągu kilku dni-tygodni, nie „kiedyś".
                 </span>
               </li>
               <li className="flex items-start gap-3">
@@ -330,7 +330,7 @@ Skąd się dowiedział: ${formData.source || 'Nie podano'}
               <li className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" strokeWidth={2.5} />
                 <span className="text-gray-200">
-                  Możesz przeznaczyć przynajmniej kilkaset złotych na testy (albo jesteś gotów to
+                  Możesz przeznaczyć jakiekolwiek pieniądze na testy (albo jesteś gotów to
                   wypracować).
                 </span>
               </li>
