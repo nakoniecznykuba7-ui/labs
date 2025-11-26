@@ -28,7 +28,7 @@ export default function Programy() {
   return (
     <>
       <SEO
-        title="Programy EarningLab — EcomLab, AI Skill Lab, Service Growth Lab"
+        title="Programy | EarningLab"
         description="3 programy pod różne cele: e-commerce, usługi z AI, skalowanie usług. Dostajesz plan, zadania i feedback 1:1 — bez teorii."
         path="/programy"
         jsonLd={breadcrumbSchema}

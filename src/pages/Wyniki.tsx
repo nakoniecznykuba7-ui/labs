@@ -311,7 +311,7 @@ export default function Wyniki() {
   return (
     <>
       <SEO
-        title="Wyniki i Case Studies — EarningLab (kroki + liczby + weryfikacja)"
+        title="Wyniki | EarningLab"
         description="Przykłady wyników z realnych projektów: co zrobiliśmy, w jakim czasie i jaki był efekt. Zobacz proces krok po kroku."
         path="/wyniki"
         jsonLd={breadcrumbSchema}

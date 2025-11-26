@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="EarningLab — konkretna ścieżka zarabiania online (plan + zadania + feedback 1:1)"
+        title="EarningLab | Laboratorium Zarabiania Online"
         description="Dobieramy ścieżkę i dajemy plan krok po kroku: zadania, checklisty i feedback 1:1. Bez lania wody — tylko to, co prowadzi do pierwszych wyników."
         path="/"
         ogType="website"

@@ -9,7 +9,7 @@ export default function Zakup() {
   return (
     <>
       <SEO
-        title="Dziękujemy za zakup — EarningLab"
+        title="Dziękujemy za zakup | EarningLab"
         description="Instrukcje po zakupie i następne kroki."
         path="/zakup"
         robots="noindex, nofollow, noarchive"

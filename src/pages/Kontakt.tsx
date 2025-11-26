@@ -120,7 +120,7 @@ export default function Kontakt() {
   return (
     <>
       <SEO
-        title="Kontakt — EarningLab"
+        title="Kontakt | EarningLab"
         description="Masz pytanie? Napisz do EarningLab. Odpowiadamy szybko — mail lub formularz."
         path="/kontakt"
       />

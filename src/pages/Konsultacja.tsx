@@ -185,7 +185,7 @@ Skąd się dowiedział: ${formData.source || 'Nie podano'}
   return (
     <>
       <SEO
-        title="Konsultacja wstępna — EarningLab (dopasowanie ścieżki)"
+        title="Konsultacja | EarningLab"
         description="Szybko sprawdzimy, czy EarningLab ma sens w Twojej sytuacji. Jeśli nie — powiemy wprost. Dostaniesz rekomendację i plan startu."
         path="/konsultacja"
       />
