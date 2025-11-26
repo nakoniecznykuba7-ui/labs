@@ -1,4 +1,4 @@
-import { useState } from 'react';
+gimport { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { TrendingUp, Target, Zap, ChevronDown, ChevronUp } from 'lucide-react';
 import SEO from '../components/SEO';
@@ -292,7 +292,7 @@ export default function Wyniki() {
       title: 'Dystrybucja',
       description: 'Najpierw kanał, który dowiezie pierwsze rozmowy / zamówienia. Potem dopiero skalowanie.',
       points: [
-        'DM / cold outreach / organic — na start',
+        'DM / cold outreach / organic - na start',
         'Małe testy płatne tam, gdzie ma sens',
         'Retargeting dopiero po podstawach'
       ]
