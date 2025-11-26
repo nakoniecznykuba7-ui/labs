@@ -17,10 +17,10 @@ export default function SEO({
   title,
   description,
   path,
-  robots = 'index, follow, max-image-preview:large',
+  robots = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
   ogTitle,
   ogDescription,
-  ogImage = '/earninglab-icon.png',
+  ogImage = '/og.png',
   ogType = 'website',
   canonical,
   jsonLd,
@@ -28,6 +28,7 @@ export default function SEO({
   const normalizedPath = path === '/' ? '' : path.replace(/\/$/, '');
   const canonicalURL = canonical || `https://earninglab.pl${normalizedPath}`;
   const fullURL = `https://earninglab.pl${normalizedPath}`;
+  const hreflangURL = `https://earninglab.pl${normalizedPath}`;
 
   const finalOgTitle = ogTitle || title;
   const finalOgDescription = ogDescription || description;
@@ -46,9 +47,13 @@ export default function SEO({
       <meta name="application-name" content="EarningLab" />
 
       <link rel="icon" href="/favicon.ico" sizes="any" />
-      <link rel="icon" type="image/png" href="/favicon.png" sizes="512x512" />
-      <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-      <link rel="manifest" href="/manifest.json" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=2" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png?v=2" />
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
+      <link rel="manifest" href="/manifest.webmanifest" />
+
+      <link rel="alternate" hrefLang="pl-PL" href={hreflangURL} />
+      <link rel="alternate" hrefLang="x-default" href={hreflangURL} />
 
       <meta property="og:title" content={finalOgTitle} />
       <meta property="og:description" content={finalOgDescription} />
@@ -56,6 +61,8 @@ export default function SEO({
       <meta property="og:type" content={ogType} />
       <meta property="og:site_name" content="EarningLab" />
       <meta property="og:image" content={fullOgImage} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
       <meta property="og:locale" content="pl_PL" />
 
       <meta name="twitter:card" content="summary_large_image" />
