@@ -673,7 +673,7 @@ export default function Wyniki() {
             Chcesz sprawdzić, czy to ma sens u Ciebie?
           </h2>
           <p className="text-lg text-gray-200 mb-8">
-            Jeśli nie widzimy realnej ścieżki — powiemy wprost. Bez marnowania czasu.
+            Jeśli nie widzimy realnej ścieżki - powiemy wprost. Bez marnowania czasu.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
