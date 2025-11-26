@@ -196,7 +196,7 @@ const caseStudies: CaseStudy[] = [
 const faqItems = [
   {
     question: 'Czy te wyniki są gwarantowane?',
-    answer: 'Nie gwarantujemy konkretnych wyników, bo zależą od Twojego startu, zasobów, czasu i egzekucji. Case studies pokazują realne scenariusze, ale każda sytuacja jest inna. Jeśli w konsultacji nie widzimy realnej ścieżki do wyniku – powiemy wprost.'
+    answer: 'Tak - gwarantujemy, że będziemy działać z Tobą aż do efektu. Nie obiecujemy sztywnej liczby na koniec, bo każdy projekt ma inne zasoby i punkt startu - ale gwarantujemy proces, który prowadzimy aż do momentu, w którym pojawiają się realne wyniki. Dostajesz od nas długoterminowe wsparcie, bez dodatkowych kosztów - jesteśmy z Tobą, dopóki ścieżka działa i dowozimy kolejne kroki.'
   },
   {
     question: 'Co jeśli startuję od zera?',
