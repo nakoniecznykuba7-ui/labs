@@ -30,23 +30,23 @@ const caseStudies: CaseStudy[] = [
     title: 'Sklep 0→5k w miesiąc',
     start: 'Pomysł na produkt, zero sprzedaży',
     quickActions: [
-      'MVP sklepu w 3 dni',
-      'Meta Ads: budżet 1500 zł',
+      'MVP sklepu w 24h',
+      'Meta Ads: budżet 300 zł',
       'A/B testy checkout'
     ],
     timeframe: '21 dni',
     result: '5 200 zł przychodu, 12 zamówień',
     verificationNote: 'Dashboard Shopify + Meta Ads Manager',
     fullActions: [
-      'Zbudowanie MVP sklepu (Shopify) w 3 dni',
-      'Kampanie Meta Ads na cold traffic (budżet 1500 zł)',
+      'Zbudowanie MVP sklepu (Shopify) w 24h',
+      'Kampanie Meta Ads na cold traffic (budżet 300 zł)',
       'Optymalizacja landing page i checkout (A/B testy)'
     ],
     steps: [
       'Diagnoza: niszowy produkt z wysokim marginesem',
       'Ustawienie sklepu + integracje płatności w 72h',
-      'Kampanie testowe na 3 kreacje (500 zł każda)',
-      'Skalowanie wygrywającej kreacji (CPA < 100 zł)',
+      'Kampanie testowe na 3 kreacje (100 zł każda)',
+      'Skalowanie wygrywającej kreacji (CPA < 20 zł)',
       'Upsell w checkout (zwiększenie AOV o 18%)',
       'Feedback co 48h + iteracje kampanii'
     ]
