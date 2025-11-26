@@ -496,15 +496,15 @@ export default function Wyniki() {
       </Section>
 
       <Section hasBorder>
-        <div className="text-center mb-12">
+        <div className="flex flex-col items-center text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold mb-3">Co skaluje najbardziej</h2>
-          <p className="text-lg text-gray-200 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-200 max-w-2xl">
             3 obszary, które decydują o wyniku. Każdy musi działać.
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto">
-          <div className="flex gap-2 mb-6 border-b border-white/10">
+        <div className="flex flex-col items-center max-w-6xl mx-auto">
+          <div className="flex gap-2 mb-6 border-b border-white/10 justify-center">
             <button
               onClick={() => setActiveTab('oferta')}
               role="tab"
@@ -543,7 +543,7 @@ export default function Wyniki() {
             </button>
           </div>
 
-          <Card variant="default">
+          <Card variant="default" className="w-full max-w-3xl mx-auto">
             <div className="flex items-center gap-3 mb-4">
               {activeTab === 'oferta' && <Target className="w-8 h-8 text-cyan-400" />}
               {activeTab === 'dystrybucja' && <Zap className="w-8 h-8 text-purple-400" />}
