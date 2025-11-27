@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 
 interface BadgeProps {
   children: ReactNode;
-  variant?: 'default' | 'cyan' | 'purple' | 'blue';
+  variant?: 'default' | 'cyan' | 'purple' | 'blue' | 'green';
   showPulse?: boolean;
 }
 
@@ -12,6 +12,7 @@ export default function Badge({ children, variant = 'default', showPulse = false
     cyan: 'bg-cyan-500/10 border-cyan-500/20 text-cyan-400',
     purple: 'bg-purple-500/10 border-purple-500/20 text-purple-400',
     blue: 'bg-blue-500/10 border-blue-500/20 text-blue-400',
+    green: 'bg-[#00e676]/10 border-[#00e676]/20 text-white',
   };
 
   return (

@@ -10,6 +10,9 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-10 items-center">
           <div className="space-y-2.5">
+            <Badge variant="green" showPulse>
+              Black Week: -40% na start + natychmiastowy plan działania po zakupie
+            </Badge>
             <Badge showPulse>
               Laboratorium zarabiania online dla ludzi, którzy nie chcą kolejnego kursu, tylko wyniki
             </Badge>
@@ -36,6 +39,9 @@ export default function Hero() {
               >
                 Zobacz ścieżki zarabiania
               </Button>
+              <p className="text-sm text-[#2bc9ff] mt-3">
+                Black Week: -40% na start + natychmiastowy plan działania po zakupie
+              </p>
             </div>
 
             <div className="space-y-2.5 pt-3">
