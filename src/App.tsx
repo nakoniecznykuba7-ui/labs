@@ -9,6 +9,7 @@ import Zakup from './pages/Zakup';
 import Konsultacja from './pages/Konsultacja';
 import Wyniki from './pages/Wyniki';
 import Regulamin from './pages/Regulamin';
+import Polityka from './pages/Polityka';
 
 function App() {
   const location = useLocation();
@@ -38,6 +39,7 @@ function App() {
           <Route path="/zakup" element={<Zakup />} />
           <Route path="/konsultacja" element={<Konsultacja />} />
           <Route path="/regulamin" element={<Regulamin />} />
+          <Route path="/polityka" element={<Polityka />} />
         </Routes>
       </main>
       <Footer />
