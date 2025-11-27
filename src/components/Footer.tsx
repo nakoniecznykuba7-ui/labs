@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Logo from '../assets/1000012979-removebg-preview.png';
 
 export default function Footer() {
@@ -12,8 +13,16 @@ export default function Footer() {
             </span>
           </div>
 
-          <div className="text-sm text-gray-400">
-            © 2025 EarningLab. Wszystkie prawa zastrzeżone.
+          <div className="flex items-center gap-6">
+            <Link
+              to="/regulamin"
+              className="text-sm text-gray-400 hover:text-cyan-400 transition-colors"
+            >
+              Regulamin
+            </Link>
+            <div className="text-sm text-gray-400">
+              © 2025 EarningLab. Wszystkie prawa zastrzeżone.
+            </div>
           </div>
         </div>
       </div>
