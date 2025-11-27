@@ -73,6 +73,7 @@ export default function Odstapienie() {
         title="Formularz odstąpienia od umowy"
         description="Formularz odstąpienia od umowy - EarningLab.pl"
         path="/odstapienie"
+        robots="noindex, nofollow"
       />
 
       <div className="min-h-screen pt-20 pb-16 px-6">

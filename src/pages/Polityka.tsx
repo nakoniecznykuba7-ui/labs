@@ -12,6 +12,7 @@ export default function Polityka() {
         title="Polityka Prywatności i Cookies"
         description="Polityka Prywatności i plików Cookies serwisu EarningLab.pl"
         path="/polityka"
+        robots="noindex, nofollow"
       />
 
       <div className="min-h-screen pt-20 pb-16 px-6">

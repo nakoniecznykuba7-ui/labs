@@ -12,6 +12,7 @@ export default function Regulamin() {
         title="Regulamin świadczenia usług"
         description="Regulamin świadczenia usług drogą elektroniczną EarningLab.pl"
         path="/regulamin"
+        robots="noindex, nofollow"
       />
 
       <div className="min-h-screen pt-20 pb-16 px-6">
