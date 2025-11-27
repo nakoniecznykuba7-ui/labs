@@ -243,14 +243,6 @@ export default function Odstapienie() {
                   <span className="text-amber-400 text-lg font-bold">!</span>
                 </div>
               </div>
-              <div>
-                <h3 className="font-semibold text-amber-400 mb-2">
-                  Informacja prawna
-                </h3>
-                <p className="text-gray-300 text-sm leading-relaxed">
-                  Zgodnie z art. 38 pkt 1 i 13 ustawy o prawach konsumenta – jeśli usługa została rozpoczęta (np. otrzymałeś plan działania lub materiały), prawo odstąpienia może nie przysługiwać.
-                </p>
-              </div>
             </div>
           </Card>
         </div>
