@@ -20,6 +20,12 @@ export default function Footer() {
             >
               Regulamin
             </Link>
+            <Link
+              to="/polityka"
+              className="text-sm text-gray-400 hover:text-cyan-400 transition-colors"
+            >
+              Polityka prywatności
+            </Link>
             <div className="text-sm text-gray-400">
               © 2025 EarningLab. Wszystkie prawa zastrzeżone.
             </div>
