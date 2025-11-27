@@ -11,6 +11,7 @@ export default function Regulamin() {
       <SEO
         title="Regulamin świadczenia usług"
         description="Regulamin świadczenia usług drogą elektroniczną EarningLab.pl"
+        path="/regulamin"
       />
 
       <div className="min-h-screen pt-20 pb-16 px-6">
