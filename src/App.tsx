@@ -10,6 +10,7 @@ import Konsultacja from './pages/Konsultacja';
 import Wyniki from './pages/Wyniki';
 import Regulamin from './pages/Regulamin';
 import Polityka from './pages/Polityka';
+import Odstapienie from './pages/Odstapienie';
 
 function App() {
   const location = useLocation();
@@ -40,6 +41,7 @@ function App() {
           <Route path="/konsultacja" element={<Konsultacja />} />
           <Route path="/regulamin" element={<Regulamin />} />
           <Route path="/polityka" element={<Polityka />} />
+          <Route path="/odstapienie" element={<Odstapienie />} />
         </Routes>
       </main>
       <Footer />

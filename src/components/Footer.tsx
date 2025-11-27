@@ -13,7 +13,7 @@ export default function Footer() {
             </span>
           </div>
 
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
             <Link
               to="/regulamin"
               className="text-sm text-gray-400 hover:text-cyan-400 transition-colors"
@@ -26,7 +26,13 @@ export default function Footer() {
             >
               Polityka prywatności
             </Link>
-            <div className="text-sm text-gray-400">
+            <Link
+              to="/odstapienie"
+              className="text-sm text-gray-400 hover:text-cyan-400 transition-colors"
+            >
+              Odstąpienie od umowy
+            </Link>
+            <div className="text-sm text-gray-400 w-full md:w-auto text-center">
               © 2025 EarningLab. Wszystkie prawa zastrzeżone.
             </div>
           </div>
