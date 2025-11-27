@@ -188,7 +188,7 @@ export default function Odstapienie() {
                   htmlFor="transactionNumber"
                   className="block text-sm font-medium text-gray-200 mb-2"
                 >
-                  Numer transakcji <span className="text-gray-500">(opcjonalne)</span>
+                  Numer transakcji
                 </label>
                 <input
                   type="text"
@@ -236,15 +236,6 @@ export default function Odstapienie() {
             </form>
           </Card>
 
-          <Card className="bg-amber-500/5 border-amber-500/20">
-            <div className="flex gap-3">
-              <div className="flex-shrink-0">
-                <div className="w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center">
-                  <span className="text-amber-400 text-lg font-bold">!</span>
-                </div>
-              </div>
-            </div>
-          </Card>
         </div>
       </div>
     </>
