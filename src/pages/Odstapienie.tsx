@@ -169,7 +169,7 @@ export default function Odstapienie() {
                   htmlFor="program"
                   className="block text-sm font-medium text-gray-200 mb-2"
                 >
-                  Nazwa programu/pakietu
+                  Nazwa programu
                 </label>
                 <input
                   type="text"
@@ -179,7 +179,7 @@ export default function Odstapienie() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg focus:ring-2 focus:ring-cyan-400 focus:border-transparent outline-none transition-all text-white placeholder-gray-500"
-                  placeholder="Np. Trading Base Camp"
+                  placeholder="Np. EcomLab"
                 />
               </div>
 
