@@ -126,7 +126,7 @@ export default function Regulamin() {
                 </h2>
                 <ol className="space-y-3 list-decimal list-inside">
                   <li>Klient będący konsumentem ma prawo odstąpić od umowy w terminie 14 dni, o ile nie doszło do rozpoczęcia wykonania usługi.</li>
-                  <li>Ze względu na charakter usług indywidualnych i dostarczanie treści cyfrowych – po udostępnieniu planu działania oraz rozpoczęciu realizacji wsparcia 1:1, prawo odstąpienia NIE PRZYSŁUGUJE (art. 38 pkt 1 i pkt 13 ustawy).</li>
+                  <li>Ze względu na charakter usług indywidualnych i dostarczanie treści cyfrowych – po udostępnieniu planu działania oraz rozpoczęciu realizacji wsparcia 1:1, prawo odstąpienia NIE PRZYSŁUGUJE (art. 38 pkt 1 i pkt. 13 ustawy).</li>
                   <li>Klient może złożyć reklamację poprzez e-mail.</li>
                 </ol>
               </section>
